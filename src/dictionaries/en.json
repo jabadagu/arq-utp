@@ -1,0 +1,126 @@
+{
+  "forntpage": {
+    "banner": {
+      "h1": "Insights On-the-Go: Access Your Dashboard Anywhere, Anytime",
+      "p": "Our intuitive interface transforms complex data into actionable insights, empowering you to make informed decisions with confidence.",
+      "btnText": "Get started - It is free!"
+    }
+  },
+
+  "leftSideMenu": [
+    {
+      "type": "sub-title",
+      "title": "APPS & PAGES"
+    },
+    {
+      "type": "link",
+      "title": "To Do List",
+      "icon": "format_list_bulleted",
+      "href": "/apps/to-do-list/"
+    },
+    {
+      "type": "link",
+      "title": "Calendar",
+      "icon": "date_range",
+      "href": "/apps/calendar/"
+    },
+    {
+      "type": "link",
+      "title": "Contacts",
+      "icon": "contact_page",
+      "href": "/apps/contacts/"
+    },
+    {
+      "type": "sub-title",
+      "title": "MODULES"
+    },
+    {
+      "type": "link",
+      "title": "Members",
+      "icon": "people",
+      "href": "/members/"
+    },
+    {
+      "type": "link",
+      "title": "Usuarios",
+      "icon": "people",
+      "href": "/users/"
+    },
+    {
+      "type": "sub-title",
+      "title": "OTHERS"
+    },
+    {
+      "type": "accordion",
+      "title": "Settings",
+      "icon": "settings",
+      "accordionPanel": "panel8",
+      "subItems": [
+        { "title": "Account Settings", "href": "/settings/" },
+        { "title": "Change Password", "href": "/settings/change-password/" }
+      ]
+    },
+    {
+      "type": "link",
+      "title": "Logout",
+      "icon": "logout",
+      "href": "/authentication/logout/"
+    }
+  ],
+
+  "topHeaderNavbar": {
+    "horizontalNavbar": [
+      {
+        "title": "Apps",
+        "icon": "deployed_code",
+        "submenu": [
+          {
+            "title": "To Do List",
+            "href": "/apps/to-do-list/",
+            "icon": "format_list_bulleted"
+          },
+          {
+            "title": "Calendar",
+            "href": "/apps/calendar/",
+            "icon": "date_range"
+          },
+          {
+            "title": "Contacts",
+            "href": "/apps/contacts/",
+            "icon": "contact_page"
+          }
+        ]
+      },
+      {
+        "title": "Modules",
+        "icon": "token",
+        "submenu": [
+          { "title": "Members", "href": "/members/", "icon": "people" },
+          { "title": "Usuarios", "href": "/users/", "icon": "people" }
+        ]
+      },
+      {
+        "title": "Others",
+        "icon": "open_run",
+        "submenu": [
+          {
+            "title": "Settings",
+            "icon": "settings",
+            "submenu": [
+              { "title": "Account Settings", "href": "/settings/" },
+              {
+                "title": "Change Password",
+                "href": "/settings/change-password/"
+              }
+            ]
+          },
+          {
+            "title": "Logout",
+            "href": "/authentication/logout",
+            "icon": "logout"
+          }
+        ]
+      }
+    ]
+  }
+}
