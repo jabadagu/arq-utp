@@ -29,7 +29,7 @@ const SignUpForm: React.FC = () => {
           container
           alignItems='center'
           columnSpacing={{ xs: 1, sm: 2, md: 4, lg: 3 }}>
-          <Grid size={{ xs: 12, md: 6, lg: 6, xl: 7 }}>
+          <Grid size={{ xs: 6, sm: 6, md: 6 }}>
             <Box sx={{ display: { xs: "none", md: "block" } }}>
               <Image
                 src='/images/sign-up.jpg'
@@ -41,7 +41,7 @@ const SignUpForm: React.FC = () => {
             </Box>
           </Grid>
 
-          <Grid size={{ xs: 12, md: 6, lg: 6, xl: 7 }}>
+          <Grid size={{ xs: 12, sm: 6, md: 6 }}>
             <Box
               className='form-content'
               sx={{ paddingLeft: { xs: "0", lg: "10px" } }}>
