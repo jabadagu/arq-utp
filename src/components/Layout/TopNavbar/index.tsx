@@ -64,7 +64,7 @@ const TopNavbar: React.FC<TopNavbarProps> = ({
                   gap: { xs: "10px", sm: "5px", md: "15px" },
                 }}>
                 <Box className='logos'>
-                  <Link href='/dashboard/ecommerce/' className='logo'>
+                  <Link href='/apps/to-do-list' className='logo'>
                     <Image
                       src='/images/logo.svg'
                       alt='logo'
@@ -73,7 +73,7 @@ const TopNavbar: React.FC<TopNavbarProps> = ({
                     />
                   </Link>
 
-                  <Link href='/dashboard/ecommerce/' className='white-logo'>
+                  <Link href='/apps/to-do-list' className='white-logo'>
                     <Image
                       src='/images/white-logo-big.png'
                       alt='logo'

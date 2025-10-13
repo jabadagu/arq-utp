@@ -110,7 +110,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({
       }`}>
       <Box className='left-sidebar-menu'>
         <Box className='logo'>
-          <Link href={`/${lang}/dashboard/ecommerce/`}>
+          <Link href={`/${lang}/apps/to-do-list`}>
             <Image
               src='/images/logo-big.png'
               alt='logo-icon'

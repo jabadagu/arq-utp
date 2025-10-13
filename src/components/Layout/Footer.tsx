@@ -15,16 +15,7 @@ const Footer: React.FC = () => {
           padding: "20px 25px",
         }}>
         <Typography>
-          © <span className='text-purple'>Eventos Peru</span> es propiedad de{" "}
-          <a
-            href='https://envytheme.com/'
-            target='_blank'
-            className='text-primary'
-            style={{
-              textDecoration: "none",
-            }}>
-            EnvyTheme
-          </a>
+          © <span className='text-purple'>Eventos Peru</span>
         </Typography>
       </Box>
     </>

@@ -12,7 +12,7 @@ export default async function Page() {
 
         <ul className='breadcrumb'>
           <li>
-            <NextLink href='/dashboard/ecommerce/'>
+            <NextLink href='/apps/to-do-list'>
               <i className='material-symbols-outlined'>home</i>
               Dashboard
             </NextLink>

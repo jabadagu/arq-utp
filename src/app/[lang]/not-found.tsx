@@ -9,30 +9,28 @@ export default function NotFound() {
   return (
     <>
       <Box
-        className="not-found-area"
+        className='not-found-area'
         sx={{
           py: { xs: "50px", md: "70px", lg: "120px" },
-        }}
-      >
-        <Box className="not-found-content text-center ml-auto mr-auto">
-          <Box mb="20px">
+        }}>
+        <Box className='not-found-content text-center ml-auto mr-auto'>
+          <Box mb='20px'>
             <Image
-              src="/images/error.png"
-              alt="error-image"
+              src='/images/error.png'
+              alt='error-image'
               width={400}
               height={400}
             />
           </Box>
 
           <Typography
-            variant="h4"
+            variant='h4'
             sx={{
               fontSize: "21px",
               fontWeight: "700",
               mb: "13px",
               lineHeight: "1.4",
-            }}
-          >
+            }}>
             Looks like we did not find this page, please try again later.
           </Typography>
 
@@ -42,7 +40,7 @@ export default function NotFound() {
           </Typography>
 
           <Link
-            href={`/${lang}/dashboard/ecommerce/`}
+            href={`/${lang}/apps/to-do-list`}
             sx={{
               bgcolor: "primary.main",
               textTransform: "capitalize",
@@ -53,8 +51,7 @@ export default function NotFound() {
               color: "#fff !important",
               boxShadow: "none",
               display: "inline-block",
-            }}
-          >
+            }}>
             Back to Home
           </Link>
         </Box>
