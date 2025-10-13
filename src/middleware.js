@@ -39,7 +39,7 @@ export function middleware(request) {
   try {
     // build regex to match localized protected routes, e.g. /en/apps/ and /en/members/
     const appsRegex = new RegExp(
-      `^/(${i18n.locales.join("|")})/(apps|members)/`
+      `^/(${i18n.locales.join("|")})/(apps|members|settings)/`
     );
     if (appsRegex.test(pathname)) {
       const cookieHeader = request.headers.get("cookie") || "";
