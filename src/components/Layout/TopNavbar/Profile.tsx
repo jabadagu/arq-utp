@@ -61,7 +61,7 @@ const Profile: React.FC<{}> = () => {
               display: { xs: "none", sm: "block" },
             }}
             className='text-black'>
-            {lang === "en" ? "Olivia" : lang === "fr" ? "Olive" : "أوليفيا"}
+            jose
           </Typography>
           <KeyboardArrowDownIcon sx={{ fontSize: "15px" }} />
         </IconButton>
