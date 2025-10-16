@@ -18,7 +18,7 @@ const NavList: React.FC = () => {
             className={`link ${
               pathname === `/${lang}/settings/` ? `${styles.active}` : ""
             }`}>
-            Account Settings
+            Configuración de Cuenta
           </Link>
         </li>
         <li>
@@ -29,7 +29,7 @@ const NavList: React.FC = () => {
                 ? `${styles.active}`
                 : ""
             }`}>
-            Change Password
+            Cambiar Contraseña
           </Link>
         </li>
       </ul>

@@ -13,16 +13,16 @@ export default function Page() {
     <>
       {/* Breadcrumb */}
       <div className='breadcrumb-card'>
-        <h5>Internal Error</h5>
+        <h5>Error Interno</h5>
 
         <ul className='breadcrumb'>
           <li>
             <NextLink href='/apps/to-do-list'>
               <i className='material-symbols-outlined'>home</i>
-              Dashboard
+              Panel de Control
             </NextLink>
           </li>
-          <li>Internal Error</li>
+          <li>Error Interno</li>
         </ul>
       </div>
 
@@ -52,12 +52,13 @@ export default function Page() {
               mb: "13px",
               lineHeight: "1.4",
             }}>
-            Looks like we have an internal error, please try again later.
+            Parece que tenemos un error interno, por favor intente nuevamente
+            más tarde.
           </Typography>
 
           <Typography sx={{ lineHight: "1.7", mb: "30px" }}>
-            But no worries! Our team is looking ever where while you wait
-            safely.
+            ¡Pero no se preocupe! Nuestro equipo está trabajando en ello
+            mientras espera de forma segura.
           </Typography>
 
           <Link
@@ -73,7 +74,7 @@ export default function Page() {
               boxShadow: "none",
               display: "inline-block",
             }}>
-            Back to Dashboard
+            Volver al Panel de Control
           </Link>
         </Box>
       </Box>

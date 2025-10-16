@@ -18,30 +18,27 @@ const WorkingSchedule: React.FC = () => {
           mb: "25px",
           padding: { xs: "18px", sm: "20px", lg: "25px" },
         }}
-        className="rmui-card"
-      >
+        className='rmui-card'>
         <Box
           sx={{
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             mb: "25px",
-          }}
-        >
+          }}>
           <Typography
-            variant="h3"
+            variant='h3'
             sx={{
               fontSize: { xs: "16px", md: "18px" },
               fontWeight: 700,
             }}
-            className="text-black"
-          >
-            Working Schedule
+            className='text-black'>
+            Agenda de Eventos
           </Typography>
         </Box>
 
         <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <DateCalendar sx={{ width: "100%" }} className="rmui-ws-calendar" />
+          <DateCalendar sx={{ width: "100%" }} className='rmui-ws-calendar' />
         </LocalizationProvider>
 
         <UpcomingEvents />

@@ -44,8 +44,8 @@ const Profile: React.FC<{}> = () => {
           aria-haspopup='true'
           aria-expanded={open ? "true" : undefined}>
           <Avatar
-            src='/images/admin.png'
-            alt='Olivia'
+            src='/images/users/user6.jpg'
+            alt='Jose'
             sx={{
               width: { xs: "35px", sm: "42px" },
               height: { xs: "35px", sm: "42px" },
@@ -105,7 +105,7 @@ const Profile: React.FC<{}> = () => {
         className='for-dark-top-navList'>
         <MenuItem sx={{ padding: "10px 20px" }}>
           <Avatar
-            src='/images/admin.png'
+            src='/images/users/user6.jpg'
             sx={{
               width: 31,
               height: 31,
@@ -122,15 +122,11 @@ const Profile: React.FC<{}> = () => {
                 fontWeight: "500",
               }}
               className='text-black'>
-              {lang === "en" ? "Olivia" : lang === "fr" ? "Olive" : "أوليفيا"}
+              Jose
             </Typography>
 
             <Typography sx={{ fontSize: "12px" }}>
-              {lang === "en"
-                ? "Marketing Manager"
-                : lang === "fr"
-                ? "Responsable marketing"
-                : "مدير التسويق"}
+              Frontend Developer
             </Typography>
           </Box>
         </MenuItem>
@@ -152,13 +148,7 @@ const Profile: React.FC<{}> = () => {
               <SettingsIcon sx={{ fontSize: "20px" }} className='text-black' />
             </ListItemIcon>
 
-            <span style={{ fontSize: "13px" }}>
-              {lang === "en"
-                ? "Settings"
-                : lang === "fr"
-                ? "Paramètres"
-                : "إعدادات"}
-            </span>
+            <span style={{ fontSize: "13px" }}>Configuraciones</span>
           </Link>
         </MenuItem>
 
@@ -175,13 +165,7 @@ const Profile: React.FC<{}> = () => {
               <Logout sx={{ fontSize: "20px" }} className='text-black' />
             </ListItemIcon>
 
-            <span style={{ fontSize: "13px" }}>
-              {lang === "en"
-                ? "Logout"
-                : lang === "fr"
-                ? "Déconnexion"
-                : "تسجيل الخروج"}
-            </span>
+            <span style={{ fontSize: "13px" }}>Cerrar sesión</span>
           </Link>
         </MenuItem>
       </Menu>

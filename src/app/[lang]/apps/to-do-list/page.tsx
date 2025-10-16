@@ -8,17 +8,17 @@ export default async function Page() {
     <RequireAuth>
       {/* Breadcrumb */}
       <div className='breadcrumb-card'>
-        <h5>To Do List</h5>
+        <h5>Lista de Eventos</h5>
 
         <ul className='breadcrumb'>
           <li>
             <NextLink href='/apps/to-do-list'>
               <i className='material-symbols-outlined'>home</i>
-              Dashboard
+              Panel de Control
             </NextLink>
           </li>
-          <li>Apps</li>
-          <li>To Do List</li>
+          <li>Aplicaciones</li>
+          <li>Lista de Eventos</li>
         </ul>
       </div>
 

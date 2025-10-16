@@ -119,200 +119,200 @@ const rows = [
     "/images/users/user6.jpg",
     "Oliver Khan",
     "oliver@eventosperu.com",
-    "+1 555-123-4567",
-    "Washington D.C",
+    "+51 955-123-4567",
+    "Lima",
     "10 Oct 2024",
-    "01 Dec 2024 08:23 AM"
+    "01 Dic 2024 08:23 AM"
   ),
   createData(
     "#JAN-819",
     "/images/users/user7.jpg",
     "Carolyn Barnes",
     "carolyn@eventosperu.com",
-    "+1 555-987-6543",
-    "Chicago",
+    "+51 955-987-6543",
+    "Arequipa",
     "11 Sep 2024",
-    "02 Dec 2024 05:09 PM"
+    "02 Dic 2024 05:09 PM"
   ),
   createData(
     "#JAN-818",
     "/images/users/user8.jpg",
     "Donna Miller",
     "donna@eventosperu.com",
-    "+1 555-456-7890",
-    "Oklahoma City",
-    "12 Aug 2024",
-    "03 Dec 2024 09:30 AM"
+    "+51 955-456-7890",
+    "Cusco",
+    "12 Ago 2024",
+    "03 Dic 2024 09:30 AM"
   ),
   createData(
     "#JAN-817",
     "/images/users/user9.jpg",
     "Barbara Cross",
     "barbara@eventosperu.com",
-    "+1 555-369-7878",
-    "San Diego",
+    "+51 955-369-7878",
+    "Trujillo",
     "13 Jul 2024",
-    "04 Dec 2024 10:22 AM"
+    "04 Dic 2024 10:22 AM"
   ),
   createData(
     "#JAN-816",
     "/images/users/user10.jpg",
     "Rebecca Block",
     "rebecca@eventosperu.com",
-    "+1 555-658-4488",
-    "Los Angeles",
+    "+51 955-658-4488",
+    "Piura",
     "14 Jun 2024",
-    "05 Dec 2024 08:49 AM"
+    "05 Dic 2024 08:49 AM"
   ),
   createData(
     "#JAN-815",
     "/images/users/user11.jpg",
     "Ramiro McCarty",
     "ramiro@eventosperu.com",
-    "+1 555-558-9966",
-    "Las Vegas",
+    "+51 955-558-9966",
+    "Chiclayo",
     "15 May 2024",
-    "06 Dec 2024 04:35 PM"
+    "06 Dic 2024 04:35 PM"
   ),
   createData(
     "#JAN-814",
     "/images/users/user12.jpg",
     "Robert Fairweather",
     "robert@eventosperu.com",
-    "+1 555-357-5888",
-    "San Francisco",
-    "16 Apr 2024",
-    "07 Dec 2024 06:13 PM"
+    "+51 955-357-5888",
+    "Ica",
+    "16 Abr 2024",
+    "07 Dic 2024 06:13 PM"
   ),
   createData(
     "#JAN-813",
     "/images/users/user13.jpg",
     "Marcelino Haddock",
     "marcelino@eventosperu.com",
-    "+1 555-456-8877",
-    "Washington D.C",
+    "+51 955-456-8877",
+    "Lima",
     "17 Mar 2024",
-    "08 Dec 2024 02:20 AM"
+    "08 Dic 2024 02:20 AM"
   ),
   createData(
     "#JAN-812",
     "/images/users/user14.jpg",
     "Thomas Wilson",
     "thomas@eventosperu.com",
-    "+1 555-622-4488",
-    "San Diego",
+    "+51 955-622-4488",
+    "Trujillo",
     "18 Feb 2024",
-    "09 Dec 2024 12:09 AM"
+    "09 Dic 2024 12:09 AM"
   ),
   createData(
     "#JAN-811",
     "/images/users/user15.jpg",
     "Nathaniel Hulsey",
     "nathaniel@eventosperu.com",
-    "+1 555-225-4488",
-    "Chicago",
-    "19 Jan 2024",
-    "10 Dec 2024 06:03 PM"
+    "+51 955-225-4488",
+    "Arequipa",
+    "19 Ene 2024",
+    "10 Dic 2024 06:03 PM"
   ),
   createData(
     "#JAN-810",
     "/images/users/user15.jpg",
     "Nathaniel Hulsey",
     "nathaniel@eventosperu.com",
-    "+1 555-225-4488",
-    "Chicago",
-    "19 Jan 2024",
-    "10 Dec 2024 06:03 PM"
+    "+51 955-225-4488",
+    "Arequipa",
+    "19 Ene 2024",
+    "10 Dic 2024 06:03 PM"
   ),
   createData(
     "#JAN-809",
     "/images/users/user14.jpg",
     "Thomas Wilson",
     "thomas@eventosperu.com",
-    "+1 555-622-4488",
-    "San Diego",
+    "+51 955-622-4488",
+    "Trujillo",
     "18 Feb 2024",
-    "09 Dec 2024 12:09 AM"
+    "09 Dic 2024 12:09 AM"
   ),
   createData(
     "#JAN-808",
     "/images/users/user13.jpg",
     "Marcelino Haddock",
     "marcelino@eventosperu.com",
-    "+1 555-456-8877",
-    "Washington D.C",
+    "+51 955-456-8877",
+    "Lima",
     "17 Mar 2024",
-    "08 Dec 2024 02:20 AM"
+    "08 Dic 2024 02:20 AM"
   ),
   createData(
     "#JAN-807",
     "/images/users/user12.jpg",
     "Robert Fairweather",
     "robert@eventosperu.com",
-    "+1 555-357-5888",
-    "San Francisco",
-    "16 Apr 2024",
-    "07 Dec 2024 06:13 PM"
+    "+51 955-357-5888",
+    "Ica",
+    "16 Abr 2024",
+    "07 Dic 2024 06:13 PM"
   ),
   createData(
     "#JAN-806",
     "/images/users/user11.jpg",
     "Ramiro McCarty",
     "ramiro@eventosperu.com",
-    "+1 555-558-9966",
-    "Las Vegas",
+    "+51 955-558-9966",
+    "Chiclayo",
     "15 May 2024",
-    "06 Dec 2024 04:35 PM"
+    "06 Dic 2024 04:35 PM"
   ),
   createData(
     "#JAN-805",
     "/images/users/user10.jpg",
     "Rebecca Block",
     "rebecca@eventosperu.com",
-    "+1 555-658-4488",
-    "Los Angeles",
+    "+51 955-658-4488",
+    "Piura",
     "14 Jun 2024",
-    "05 Dec 2024 08:49 AM"
+    "05 Dic 2024 08:49 AM"
   ),
   createData(
     "#JAN-804",
     "/images/users/user9.jpg",
     "Barbara Cross",
     "barbara@eventosperu.com",
-    "+1 555-369-7878",
-    "San Diego",
+    "+51 955-369-7878",
+    "Trujillo",
     "13 Jul 2024",
-    "04 Dec 2024 10:22 AM"
+    "04 Dic 2024 10:22 AM"
   ),
   createData(
     "#JAN-803",
     "/images/users/user8.jpg",
     "Donna Miller",
     "donna@eventosperu.com",
-    "+1 555-456-7890",
-    "Oklahoma City",
-    "12 Aug 2024",
-    "03 Dec 2024 09:30 AM"
+    "+51 955-456-7890",
+    "Cusco",
+    "12 Ago 2024",
+    "03 Dic 2024 09:30 AM"
   ),
   createData(
     "#JAN-802",
     "/images/users/user7.jpg",
     "Carolyn Barnes",
     "carolyn@eventosperu.com",
-    "+1 555-987-6543",
-    "Chicago",
+    "+51 955-987-6543",
+    "Arequipa",
     "11 Sep 2024",
-    "02 Dec 2024 05:09 PM"
+    "02 Dic 2024 05:09 PM"
   ),
   createData(
     "#JAN-801",
     "/images/users/user6.jpg",
     "Oliver Khan",
     "oliver@eventosperu.com",
-    "+1 555-123-4567",
-    "Washington D.C",
+    "+51 955-123-4567",
+    "Lima",
     "10 Oct 2024",
-    "01 Dec 2024 08:23 AM"
+    "01 Dic 2024 08:23 AM"
   ),
 ].sort((b, a) => (a.id < b.id ? -1 : 1));
 
@@ -366,7 +366,7 @@ const MembersTable: React.FC = () => {
             <input
               type='text'
               className='t-input'
-              placeholder='Search here...'
+              placeholder='Buscar aquí...'
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -394,31 +394,31 @@ const MembersTable: React.FC = () => {
                 <TableCell className='text-black border-bottom'>ID</TableCell>
 
                 <TableCell className='text-black border-bottom'>
-                  Member
+                  Miembro
                 </TableCell>
 
                 <TableCell className='text-black border-bottom'>
-                  Email
+                  Correo
                 </TableCell>
 
                 <TableCell className='text-black border-bottom'>
-                  Phone
+                  Teléfono
                 </TableCell>
 
                 <TableCell className='text-black border-bottom'>
-                  Location
+                  Ubicación
                 </TableCell>
 
                 <TableCell className='text-black border-bottom'>
-                  Joining Date
+                  Fecha de Ingreso
                 </TableCell>
 
                 <TableCell className='text-black border-bottom'>
-                  Last Active
+                  Última Actividad
                 </TableCell>
 
                 <TableCell className='text-black border-bottom'>
-                  Action
+                  Acción
                 </TableCell>
               </TableRow>
             </TableHead>

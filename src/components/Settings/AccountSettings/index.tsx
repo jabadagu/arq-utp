@@ -74,11 +74,11 @@ const AccountSettings: React.FC = () => {
                 mb: "10px",
               }}
               className='text-black'>
-              Profile
+              Perfil
             </Typography>
 
             <Typography>
-              Update your photo and personal details here.
+              Actualice aquí su foto y sus datos personales.
             </Typography>
           </Box>
 
@@ -98,11 +98,11 @@ const AccountSettings: React.FC = () => {
                       display: "block",
                     }}
                     className='text-black'>
-                    First Name
+                    Nombre
                   </Typography>
 
                   <TextField
-                    label='Enter first name'
+                    label='Ingrese el nombre'
                     defaultValue='Olivia'
                     variant='filled'
                     id='firstName'
@@ -139,11 +139,11 @@ const AccountSettings: React.FC = () => {
                       display: "block",
                     }}
                     className='text-black'>
-                    Last Name
+                    Apellido
                   </Typography>
 
                   <TextField
-                    label='Enter last name'
+                    label='Ingrese el apellido'
                     defaultValue='John'
                     variant='filled'
                     id='lastName'
@@ -180,11 +180,11 @@ const AccountSettings: React.FC = () => {
                       display: "block",
                     }}
                     className='text-black'>
-                    Email Address
+                    Correo Electrónico
                   </Typography>
 
                   <TextField
-                    label='Enter amail address'
+                    label='Ingrese el correo electrónico'
                     defaultValue='olivia@eventosperu.com'
                     variant='filled'
                     id='emailAddress'
@@ -221,12 +221,12 @@ const AccountSettings: React.FC = () => {
                       display: "block",
                     }}
                     className='text-black'>
-                    Phone Number
+                    Número de Teléfono
                   </Typography>
 
                   <TextField
-                    label='Enter phone number'
-                    defaultValue='+1 444 555 6699'
+                    label='Ingrese el número de teléfono'
+                    defaultValue='+51 955 444 669'
                     variant='filled'
                     id='phoneNumber'
                     name='phoneNumber'
@@ -262,12 +262,12 @@ const AccountSettings: React.FC = () => {
                       display: "block",
                     }}
                     className='text-black'>
-                    Address
+                    Dirección
                   </Typography>
 
                   <TextField
-                    label='Enter address'
-                    defaultValue='84 S. Arrowhead Court Branford'
+                    label='Ingrese la dirección'
+                    defaultValue='Av. Primavera 123, Surco'
                     variant='filled'
                     id='address'
                     name='address'
@@ -302,16 +302,16 @@ const AccountSettings: React.FC = () => {
                     display: "block",
                   }}
                   className='text-black'>
-                  Country
+                  País
                 </Typography>
 
                 <FormControl fullWidth>
-                  <InputLabel id='country-label'>Select</InputLabel>
+                  <InputLabel id='country-label'>Seleccionar</InputLabel>
                   <Select
                     labelId='country-label'
                     id='country-type'
                     value={country}
-                    label='Select'
+                    label='Seleccionar'
                     onChange={handleCountryChange}
                     sx={{
                       "& fieldset": {
@@ -319,16 +319,13 @@ const AccountSettings: React.FC = () => {
                         borderRadius: "7px",
                       },
                     }}>
-                    <MenuItem value={0}>Switzerland</MenuItem>
-                    <MenuItem value={1}>New Zealand</MenuItem>
-                    <MenuItem value={2}>Germany</MenuItem>
-                    <MenuItem value={3}>United States</MenuItem>
-                    <MenuItem value={4}>Japan</MenuItem>
-                    <MenuItem value={5}>Netherlands</MenuItem>
-                    <MenuItem value={6}>Sweden</MenuItem>
-                    <MenuItem value={7}>Canada</MenuItem>
-                    <MenuItem value={8}>United Kingdom</MenuItem>
-                    <MenuItem value={9}>Australia</MenuItem>
+                    <MenuItem value={0}>Perú</MenuItem>
+                    <MenuItem value={1}>Chile</MenuItem>
+                    <MenuItem value={2}>Argentina</MenuItem>
+                    <MenuItem value={3}>México</MenuItem>
+                    <MenuItem value={4}>Colombia</MenuItem>
+                    <MenuItem value={5}>España</MenuItem>
+                    <MenuItem value={6}>Estados Unidos</MenuItem>
                   </Select>
                 </FormControl>
               </Box>
@@ -343,7 +340,7 @@ const AccountSettings: React.FC = () => {
                   mb: "12px",
                 }}
                 className='text-black'>
-                Date Of Birth
+                Fecha de Nacimiento
               </Typography>
 
               <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -371,16 +368,16 @@ const AccountSettings: React.FC = () => {
                     display: "block",
                   }}
                   className='text-black'>
-                  Gender
+                  Género
                 </Typography>
 
                 <FormControl fullWidth>
-                  <InputLabel id='brand-name-label'>Select</InputLabel>
+                  <InputLabel id='brand-name-label'>Seleccionar</InputLabel>
                   <Select
                     labelId='brand-name-label'
                     id='brand-name'
                     value={gender}
-                    label='Select'
+                    label='Seleccionar'
                     onChange={handleGenderChange}
                     sx={{
                       "& fieldset": {
@@ -388,9 +385,9 @@ const AccountSettings: React.FC = () => {
                         borderRadius: "7px",
                       },
                     }}>
-                    <MenuItem value={0}>Male</MenuItem>
-                    <MenuItem value={1}>Female</MenuItem>
-                    <MenuItem value={2}>Custom</MenuItem>
+                    <MenuItem value={0}>Masculino</MenuItem>
+                    <MenuItem value={1}>Femenino</MenuItem>
+                    <MenuItem value={2}>Personalizado</MenuItem>
                   </Select>
                 </FormControl>
               </Box>
@@ -407,16 +404,16 @@ const AccountSettings: React.FC = () => {
                     display: "block",
                   }}
                   className='text-black'>
-                  Your Skills
+                  Tus Habilidades
                 </Typography>
 
                 <FormControl fullWidth>
-                  <InputLabel id='brand-name-label'>Select</InputLabel>
+                  <InputLabel id='brand-name-label'>Seleccionar</InputLabel>
                   <Select
                     labelId='brand-name-label'
                     id='brand-name'
                     value={skills}
-                    label='Select'
+                    label='Seleccionar'
                     onChange={handleSkillsChange}
                     sx={{
                       "& fieldset": {
@@ -424,11 +421,11 @@ const AccountSettings: React.FC = () => {
                         borderRadius: "7px",
                       },
                     }}>
-                    <MenuItem value={0}>Leadership</MenuItem>
-                    <MenuItem value={1}>Project Management</MenuItem>
-                    <MenuItem value={2}>Data Analysis</MenuItem>
-                    <MenuItem value={3}>Teamwork</MenuItem>
-                    <MenuItem value={4}>Web Development</MenuItem>
+                    <MenuItem value={0}>Liderazgo</MenuItem>
+                    <MenuItem value={1}>Gestión de Proyectos</MenuItem>
+                    <MenuItem value={2}>Análisis de Datos</MenuItem>
+                    <MenuItem value={3}>Trabajo en Equipo</MenuItem>
+                    <MenuItem value={4}>Desarrollo Web</MenuItem>
                   </Select>
                 </FormControl>
               </Box>
@@ -445,16 +442,16 @@ const AccountSettings: React.FC = () => {
                     display: "block",
                   }}
                   className='text-black'>
-                  Your Profession
+                  Tu Profesión
                 </Typography>
 
                 <FormControl fullWidth>
-                  <InputLabel id='brand-name-label'>Select</InputLabel>
+                  <InputLabel id='brand-name-label'>Seleccionar</InputLabel>
                   <Select
                     labelId='brand-name-label'
                     id='brand-name'
                     value={profession}
-                    label='Select'
+                    label='Seleccionar'
                     onChange={handleProfessionChange}
                     sx={{
                       "& fieldset": {
@@ -462,11 +459,11 @@ const AccountSettings: React.FC = () => {
                         borderRadius: "7px",
                       },
                     }}>
-                    <MenuItem value={0}>Financial Manager</MenuItem>
-                    <MenuItem value={1}>IT Manager</MenuItem>
-                    <MenuItem value={2}>Software Developer</MenuItem>
-                    <MenuItem value={3}>Physician Assistant</MenuItem>
-                    <MenuItem value={4}>Data Scientist</MenuItem>
+                    <MenuItem value={0}>Gerente Financiero</MenuItem>
+                    <MenuItem value={1}>Gerente de TI</MenuItem>
+                    <MenuItem value={2}>Desarrollador de Software</MenuItem>
+                    <MenuItem value={3}>Asistente Médico</MenuItem>
+                    <MenuItem value={4}>Científico de Datos</MenuItem>
                   </Select>
                 </FormControl>
               </Box>
@@ -484,12 +481,12 @@ const AccountSettings: React.FC = () => {
                       display: "block",
                     }}
                     className='text-black'>
-                    Company Name
+                    Nombre de la Empresa
                   </Typography>
 
                   <TextField
-                    label='Enter company name'
-                    defaultValue='Eventos Peru Admin'
+                    label='Ingrese el nombre de la empresa'
+                    defaultValue='Eventos Perú Admin'
                     variant='filled'
                     id='companyName'
                     name='companyName'
@@ -525,11 +522,11 @@ const AccountSettings: React.FC = () => {
                       display: "block",
                     }}
                     className='text-black'>
-                    Company Website
+                    Sitio Web de la Empresa
                   </Typography>
 
                   <TextField
-                    label='Enter company website'
+                    label='Ingrese el sitio web de la empresa'
                     defaultValue='http://website.com'
                     variant='filled'
                     id='companyWebsite'
@@ -565,7 +562,7 @@ const AccountSettings: React.FC = () => {
                     display: "block",
                   }}
                   className='text-black'>
-                  Add Your Bio
+                  Agrega tu Biografía
                 </Typography>
 
                 <CustomEditor />
@@ -582,10 +579,10 @@ const AccountSettings: React.FC = () => {
                     mb: "5px",
                   }}
                   className='text-black'>
-                  Your Photo
+                  Tu Foto
                 </Typography>
 
-                <Typography>This will be displayed on your profile.</Typography>
+                <Typography>Esto se mostrará en tu perfil.</Typography>
               </Box>
 
               <FileUpload onFileSelect={handleFileSelect} />
@@ -599,7 +596,7 @@ const AccountSettings: React.FC = () => {
                   fontSize: { xs: "14px", sm: "20px" },
                 }}
                 className='text-black'>
-                Socials Profile
+                Perfiles Sociales
               </Typography>
             </Grid>
 
@@ -619,7 +616,7 @@ const AccountSettings: React.FC = () => {
                   </Typography>
 
                   <TextField
-                    label='Enter facebook link'
+                    label='Ingrese el enlace de Facebook'
                     defaultValue='https://www.facebook.com/'
                     variant='filled'
                     id='facebookLink'
@@ -657,11 +654,11 @@ const AccountSettings: React.FC = () => {
                       display: "block",
                     }}
                     className='text-black'>
-                    X
+                    X (Twitter)
                   </Typography>
 
                   <TextField
-                    label='Enter x link'
+                    label='Ingrese el enlace de X'
                     defaultValue='https://www.x.com/'
                     variant='filled'
                     id='xLink'
@@ -699,11 +696,11 @@ const AccountSettings: React.FC = () => {
                       display: "block",
                     }}
                     className='text-black'>
-                    Linkedin
+                    LinkedIn
                   </Typography>
 
                   <TextField
-                    label='Enter linkedin link'
+                    label='Ingrese el enlace de LinkedIn'
                     defaultValue='https://www.linkedin.com/'
                     variant='filled'
                     id='linkedinLink'
@@ -745,7 +742,7 @@ const AccountSettings: React.FC = () => {
                   </Typography>
 
                   <TextField
-                    label='Enter youtube link'
+                    label='Ingrese el enlace de YouTube'
                     defaultValue='https://www.youtube.com/'
                     variant='filled'
                     id='youtubeLink'
@@ -792,7 +789,7 @@ const AccountSettings: React.FC = () => {
                     color: "#fff !important",
                     boxShadow: "none",
                   }}>
-                  Cancel
+                  Cancelar
                 </Button>
 
                 <Button
@@ -807,8 +804,8 @@ const AccountSettings: React.FC = () => {
                     color: "#fff !important",
                     boxShadow: "none",
                   }}>
-                  <i className='material-symbols-outlined'>check</i> Update
-                  Profile
+                  <i className='material-symbols-outlined'>check</i> Actualizar
+                  Perfil
                 </Button>
               </Box>
             </Grid>

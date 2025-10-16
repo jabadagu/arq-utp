@@ -40,11 +40,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 1,
     name: "Ava Turner",
-    role: "Business Analyst",
-    joinedDate: "01 Jan 2024",
+    role: "Analista de Negocios",
+    joinedDate: "01 Ene 2024",
     email: "turner@eventosperu.com",
-    phone: "+1 555-445-4455",
-    location: "Washington D.C",
+    phone: "+51 555-445-4455",
+    location: "Lima",
     image: "/images/users/user11.jpg",
     socialLinks: [
       {
@@ -76,11 +76,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 2,
     name: "Ethan Parker",
-    role: "Project Manager",
-    joinedDate: "10 Jan 2024",
+    role: "Gerente de Proyectos",
+    joinedDate: "10 Ene 2024",
     email: "parker@eventosperu.com",
-    phone: "+1 555-445-7788",
-    location: "San Diego",
+    phone: "+51 555-445-7788",
+    location: "Trujillo",
     image: "/images/users/user12.jpg",
     socialLinks: [
       {
@@ -112,11 +112,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 3,
     name: "Isabella Lee",
-    role: "Team Leader",
-    joinedDate: "20 Jan 2024",
+    role: "Líder de Equipo",
+    joinedDate: "20 Ene 2024",
     email: "lee@eventosperu.com",
-    phone: "+1 555-333-2288",
-    location: "Los Angeles",
+    phone: "+51 555-333-2288",
+    location: "Arequipa",
     image: "/images/users/user13.jpg",
     socialLinks: [
       {
@@ -148,11 +148,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 4,
     name: "Liam Johnson",
-    role: "Software Engineer",
+    role: "Ingeniero de Software",
     joinedDate: "05 Feb 2024",
     email: "johnson@eventosperu.com",
-    phone: "+1 555-567-8901",
-    location: "New York",
+    phone: "+51 555-567-8901",
+    location: "Cusco",
     image: "/images/users/user14.jpg",
     socialLinks: [
       {
@@ -184,11 +184,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 5,
     name: "Olivia Martinez",
-    role: "UX Designer",
+    role: "Diseñadora UX",
     joinedDate: "15 Feb 2024",
     email: "martinez@eventosperu.com",
-    phone: "+1 555-222-3344",
-    location: "San Francisco",
+    phone: "+51 555-222-3344",
+    location: "Piura",
     image: "/images/users/user15.jpg",
     socialLinks: [
       {
@@ -220,11 +220,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 6,
     name: "Noah Smith",
-    role: "Data Scientist",
+    role: "Científico de Datos",
     joinedDate: "28 Feb 2024",
     email: "smith@eventosperu.com",
-    phone: "+1 555-789-6543",
-    location: "Chicago",
+    phone: "+51 555-789-6543",
+    location: "Tacna",
     image: "/images/users/user16.jpg",
     socialLinks: [
       {
@@ -256,11 +256,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 7,
     name: "Emma Davis",
-    role: "HR Manager",
+    role: "Gerente de RR.HH.",
     joinedDate: "10 Mar 2024",
     email: "davis@eventosperu.com",
-    phone: "+1 555-321-6789",
-    location: "Seattle",
+    phone: "+51 555-321-6789",
+    location: "Chiclayo",
     image: "/images/users/user17.jpg",
     socialLinks: [
       {
@@ -292,11 +292,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 8,
     name: "Mason Wilson",
-    role: "Marketing Specialist",
+    role: "Especialista en Marketing",
     joinedDate: "18 Mar 2024",
     email: "wilson@eventosperu.com",
-    phone: "+1 555-654-1234",
-    location: "Miami",
+    phone: "+51 555-654-1234",
+    location: "Ica",
     image: "/images/users/user18.jpg",
     socialLinks: [
       {
@@ -328,11 +328,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 9,
     name: "Ethan Parker",
-    role: "Project Manager",
-    joinedDate: "10 Jan 2024",
+    role: "Gerente de Proyectos",
+    joinedDate: "10 Ene 2024",
     email: "parker@eventosperu.com",
-    phone: "+1 555-445-7788",
-    location: "San Diego",
+    phone: "+51 555-445-7788",
+    location: "Trujillo",
     image: "/images/users/user12.jpg",
     socialLinks: [
       {
@@ -364,11 +364,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 10,
     name: "Isabella Lee",
-    role: "Team Leader",
-    joinedDate: "20 Jan 2024",
+    role: "Líder de Equipo",
+    joinedDate: "20 Ene 2024",
     email: "lee@eventosperu.com",
-    phone: "+1 555-333-2288",
-    location: "Los Angeles",
+    phone: "+51 555-333-2288",
+    location: "Arequipa",
     image: "/images/users/user13.jpg",
     socialLinks: [
       {
@@ -400,11 +400,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 11,
     name: "Liam Johnson",
-    role: "Software Engineer",
+    role: "Ingeniero de Software",
     joinedDate: "05 Feb 2024",
     email: "johnson@eventosperu.com",
-    phone: "+1 555-567-8901",
-    location: "New York",
+    phone: "+51 555-567-8901",
+    location: "Cusco",
     image: "/images/users/user14.jpg",
     socialLinks: [
       {
@@ -436,11 +436,11 @@ const teamMembersData: TeamMember[] = [
   {
     id: 12,
     name: "Olivia Martinez",
-    role: "UX Designer",
+    role: "Diseñadora UX",
     joinedDate: "15 Feb 2024",
     email: "martinez@eventosperu.com",
-    phone: "+1 555-222-3344",
-    location: "San Francisco",
+    phone: "+51 555-222-3344",
+    location: "Piura",
     image: "/images/users/user15.jpg",
     socialLinks: [
       {
@@ -546,7 +546,7 @@ const TeamMembers: React.FC = () => {
             <input
               type='text'
               className='t-input'
-              placeholder='Search here...'
+              placeholder='Buscar aquí...'
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -564,8 +564,8 @@ const TeamMembers: React.FC = () => {
                   padding: "6px 13px",
                 }}
                 color='primary'>
-                <AddIcon sx={{ position: "relative", top: "-1px" }} /> Add New
-                Member
+                <AddIcon sx={{ position: "relative", top: "-1px" }} /> Agregar
+                Miembro
               </Button>
             </Link>
           </Box>
@@ -625,7 +625,7 @@ const TeamMembers: React.FC = () => {
                   <IconButton
                     onClick={handleClick}
                     size='small'
-                    aria-controls={open ? "account-menu" : undefined}
+                    aria-controls={open ? "menú-de-cuenta" : undefined}
                     aria-haspopup='true'
                     aria-expanded={open ? "true" : undefined}>
                     <MoreHorizIcon sx={{ fontSize: "25px" }} />
@@ -633,7 +633,7 @@ const TeamMembers: React.FC = () => {
 
                   <Menu
                     anchorEl={anchorEl}
-                    id='account-menu'
+                    id='menú-de-cuenta'
                     open={open}
                     onClose={handleClose}
                     onClick={handleClose}
@@ -653,31 +653,31 @@ const TeamMembers: React.FC = () => {
                     }}
                     transformOrigin={{ horizontal: "right", vertical: "top" }}
                     anchorOrigin={{ horizontal: "right", vertical: "bottom" }}>
-                    <MenuItem>View</MenuItem>
-                    <MenuItem>Edit</MenuItem>
-                    <MenuItem>Delete</MenuItem>
+                    <MenuItem>Ver</MenuItem>
+                    <MenuItem>Editar</MenuItem>
+                    <MenuItem>Eliminar</MenuItem>
                   </Menu>
                 </Box>
               </Box>
 
               <Box mb='15px'>
                 <Box className='text-black' mt='10px'>
-                  Joined Date:
+                  Fecha de Ingreso:
                   <span className='text-body ml-5'>{member.joinedDate}</span>
                 </Box>
 
                 <Box className='text-black' mt='10px'>
-                  Email Address:
+                  Correo Electrónico:
                   <span className='text-body ml-5'>{member.email}</span>
                 </Box>
 
                 <Box className='text-black' mt='10px'>
-                  Phone Number:
+                  Número de Teléfono:
                   <span className='text-body ml-5'>{member.phone}</span>
                 </Box>
 
                 <Box className='text-black' mt='10px'>
-                  Location:
+                  Ubicación:
                   <span className='text-body ml-5'>{member.location}</span>
                 </Box>
               </Box>
@@ -728,9 +728,9 @@ const TeamMembers: React.FC = () => {
                 <Typography
                   component={"span"}
                   sx={{ fontSize: "12px", fontWeight: "500" }}>
-                  Showing {indexOfFirstItem + 1}-
-                  {Math.min(indexOfLastItem, filteredTeamMembers.length)} of{" "}
-                  {filteredTeamMembers.length} Results
+                  Mostrando {indexOfFirstItem + 1}-
+                  {Math.min(indexOfLastItem, filteredTeamMembers.length)} de{" "}
+                  {filteredTeamMembers.length} resultados
                 </Typography>
 
                 <Box

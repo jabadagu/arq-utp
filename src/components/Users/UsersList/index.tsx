@@ -62,7 +62,7 @@ function TablePaginationActions(props: TablePaginationActionsProps) {
       <IconButton
         onClick={handleBackButtonClick}
         disabled={page === 0}
-        aria-label='previous page'
+        aria-label='página anterior'
         sx={{
           borderRadius: "4px",
           padding: "6px",
@@ -78,7 +78,7 @@ function TablePaginationActions(props: TablePaginationActionsProps) {
       <IconButton
         onClick={handleNextButtonClick}
         disabled={page >= Math.ceil(count / rowsPerPage) - 1}
-        aria-label='next page'
+        aria-label='página siguiente'
         sx={{
           borderRadius: "4px",
           padding: "6px",
@@ -122,200 +122,200 @@ const rows = [
     "/images/users/user6.jpg",
     "Marcia Baker",
     "marcia@eventosperu.com",
-    "Washington D.C",
-    "+1 555-445-4455",
+    "Lima",
+    "+51 555-445-4455",
     6,
-    "01 Dec 2024"
+    "01 Dic 2024"
   ),
   createData(
     "#JAN-157",
     "/images/users/user7.jpg",
     "Carolyn Barnes",
     "carolyn@eventosperu.com",
-    "Chicago",
-    "+1 555-455-9966",
+    "Arequipa",
+    "+51 555-455-9966",
     10,
-    "02 Dec 2024"
+    "02 Dic 2024"
   ),
   createData(
     "#JAN-156",
     "/images/users/user8.jpg",
     "Donna Miller",
     "donna@eventosperu.com",
-    "San Diego",
-    "+1 555-445-7788",
+    "Trujillo",
+    "+51 555-445-7788",
     4,
-    "03 Dec 2024"
+    "03 Dic 2024"
   ),
   createData(
     "#JAN-155",
     "/images/users/user9.jpg",
     "Barbara Cros",
     "barbara@eventosperu.com",
-    "San Diego",
-    "+1 555-445-778",
+    "Piura",
+    "+51 555-445-778",
     4,
-    "04 Dec 2024"
+    "04 Dic 2024"
   ),
   createData(
     "#JAN-154",
     "/images/users/user10.jpg",
     "Rebecca Block",
     "rebecca@eventosperu.com",
-    "Los Angeles",
-    "+1 555-333-2288",
+    "Cusco",
+    "+51 555-333-2288",
     2,
-    "05 Dec 2024"
+    "05 Dic 2024"
   ),
   createData(
     "#JAN-153",
     "/images/users/user11.jpg",
     "Ramiro McCarty",
     "ramiro@eventosperu.com",
-    "Las Vegas",
-    "+1 555-445-4455",
+    "Tacna",
+    "+51 555-445-4455",
     8,
-    "06 Dec 2024"
+    "06 Dic 2024"
   ),
   createData(
     "#JAN-152",
     "/images/users/user12.jpg",
     "Robert Fairweather",
     "robert@eventosperu.com",
-    "San Francisco",
-    "+1 555-555-9922",
+    "Chiclayo",
+    "+51 555-555-9922",
     6,
-    "07 Dec 2024"
+    "07 Dic 2024"
   ),
   createData(
     "#JAN-151",
     "/images/users/user13.jpg",
     "Marcelino Haddock",
     "marcelino@eventosperu.com",
-    "Washington D.C",
-    "+1 555-455-9966",
+    "Lima",
+    "+51 555-455-9966",
     9,
-    "08 Dec 2024"
+    "08 Dic 2024"
   ),
   createData(
     "#JAN-150",
     "/images/users/user14.jpg",
     "Thomas Wilson",
     "thomas@eventosperu.com",
-    "San Dieg",
-    "+1 555-333-2288",
+    "Tacna",
+    "+51 555-333-2288",
     5,
-    "09 Dec 2024"
+    "09 Dic 2024"
   ),
   createData(
     "#JAN-149",
     "/images/users/user15.jpg",
     "Nathaniel Hulsey",
     "nathaniel@eventosperu.com",
-    "Chicago",
-    "+1 555-445-7788",
+    "Arequipa",
+    "+51 555-445-7788",
     6,
-    "10 Dec 2024"
+    "10 Dic 2024"
   ),
   createData(
     "#JAN-148",
     "/images/users/user16.jpg",
     "Marcia Baker",
     "marcia@eventosperu.com",
-    "Washington D.C",
-    "+1 555-543-4455",
+    "Lima",
+    "+51 555-543-4455",
     1,
-    "11 Dec 2024"
+    "11 Dic 2024"
   ),
   createData(
     "#JAN-147",
     "/images/users/user17.jpg",
     "Carolyn Barnes",
     "carolyn@eventosperu.com",
-    "Chicago",
-    "+1 555-763-9966",
+    "Arequipa",
+    "+51 555-763-9966",
     2,
-    "12 Dec 2024"
+    "12 Dic 2024"
   ),
   createData(
     "#JAN-146",
     "/images/users/user18.jpg",
     "Donna Miller",
     "donna@eventosperu.com",
-    "San Diego",
-    "+1 555-237-7788",
+    "Trujillo",
+    "+51 555-237-7788",
     3,
-    "13 Dec 2024"
+    "13 Dic 2024"
   ),
   createData(
     "#JAN-145",
     "/images/users/user19.jpg",
     "Barbara Cros",
     "barbara@eventosperu.com",
-    "San Diego",
-    "+1 555-963-778",
+    "Piura",
+    "+51 555-963-778",
     4,
-    "14 Dec 2024"
+    "14 Dic 2024"
   ),
   createData(
     "#JAN-144",
     "/images/users/user20.jpg",
     "Rebecca Block",
     "rebecca@eventosperu.com",
-    "Los Angeles",
-    "+1 555-946-2288",
+    "Cusco",
+    "+51 555-946-2288",
     5,
-    "15 Dec 2024"
+    "15 Dic 2024"
   ),
   createData(
     "#JAN-143",
     "/images/users/user21.jpg",
     "Ramiro McCarty",
     "ramiro@eventosperu.com",
-    "Las Vegas",
-    "+1 555-456-4455",
+    "Tacna",
+    "+51 555-456-4455",
     6,
-    "16 Dec 2024"
+    "16 Dic 2024"
   ),
   createData(
     "#JAN-142",
     "/images/users/user22.jpg",
     "Robert Fairweather",
     "robert@eventosperu.com",
-    "San Francisco",
-    "+1 555-247-9922",
+    "Chiclayo",
+    "+51 555-247-9922",
     7,
-    "17 Dec 2024"
+    "17 Dic 2024"
   ),
   createData(
     "#JAN-141",
     "/images/users/user23.jpg",
     "Marcelino Haddock",
     "marcelino@eventosperu.com",
-    "Washington D.C",
-    "+1 555-456-9966",
+    "Lima",
+    "+51 555-456-9966",
     8,
-    "18 Dec 2024"
+    "18 Dic 2024"
   ),
   createData(
     "#JAN-140",
     "/images/users/user24.jpg",
     "Thomas Wilson",
     "thomas@eventosperu.com",
-    "San Dieg",
-    "+1 555-987-2288",
+    "Tacna",
+    "+51 555-987-2288",
     9,
-    "19 Dec 2024"
+    "19 Dic 2024"
   ),
   createData(
     "#JAN-139",
     "/images/users/user25.jpg",
     "Nathaniel Hulsey",
     "nathaniel@eventosperu.com",
-    "Chicago",
-    "+1 555-345-7788",
+    "Arequipa",
+    "+51 555-345-7788",
     6,
-    "20 Dec 2024"
+    "20 Dic 2024"
   ),
 ].sort((b, a) => (a.userId < b.userId ? -1 : 1));
 
@@ -383,7 +383,7 @@ const UsersList: React.FC = () => {
               <input
                 type='text'
                 className='t-input'
-                placeholder='Search here...'
+                placeholder='Buscar aquí...'
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -400,8 +400,8 @@ const UsersList: React.FC = () => {
                   padding: "6px 13px",
                 }}
                 color='primary'>
-                <AddIcon sx={{ position: "relative", top: "-1px" }} /> Add New
-                User
+                <AddIcon sx={{ position: "relative", top: "-1px" }} /> Agregar
+                Usuario
               </Button>
             </Link>
           </Box>
@@ -429,7 +429,7 @@ const UsersList: React.FC = () => {
                         fontSize: "14px",
                       }}
                       className='text-black border-bottom'>
-                      User ID
+                      ID de Usuario
                     </TableCell>
 
                     <TableCell
@@ -439,7 +439,7 @@ const UsersList: React.FC = () => {
                         fontSize: "14px",
                       }}
                       className='text-black border-bottom'>
-                      User
+                      Usuario
                     </TableCell>
 
                     <TableCell
@@ -449,7 +449,7 @@ const UsersList: React.FC = () => {
                         fontSize: "14px",
                       }}
                       className='text-black border-bottom'>
-                      Email
+                      Correo
                     </TableCell>
 
                     <TableCell
@@ -459,7 +459,7 @@ const UsersList: React.FC = () => {
                         fontSize: "14px",
                       }}
                       className='text-black border-bottom'>
-                      Location
+                      Ubicación
                     </TableCell>
 
                     <TableCell
@@ -469,7 +469,7 @@ const UsersList: React.FC = () => {
                         fontSize: "14px",
                       }}
                       className='text-black border-bottom'>
-                      Phone
+                      Teléfono
                     </TableCell>
 
                     <TableCell
@@ -479,7 +479,7 @@ const UsersList: React.FC = () => {
                         fontSize: "14px",
                       }}
                       className='text-black border-bottom'>
-                      Projects
+                      Proyectos
                     </TableCell>
 
                     <TableCell
@@ -489,7 +489,7 @@ const UsersList: React.FC = () => {
                         fontSize: "14px",
                       }}
                       className='text-black border-bottom'>
-                      Join Date
+                      Fecha de Ingreso
                     </TableCell>
 
                     <TableCell
@@ -499,7 +499,7 @@ const UsersList: React.FC = () => {
                         fontSize: "14px",
                       }}
                       className='text-black border-bottom'>
-                      Action
+                      Acciones
                     </TableCell>
                   </TableRow>
                 </TableHead>
@@ -537,7 +537,7 @@ const UsersList: React.FC = () => {
                           <Box sx={{ flexShrink: "0" }}>
                             <Image
                               src={row.userImage}
-                              alt='Product'
+                              alt='imagen-usuario'
                               width={40}
                               height={40}
                               style={{ borderRadius: "100px" }}
@@ -662,7 +662,7 @@ const UsersList: React.FC = () => {
                         5,
                         10,
                         25,
-                        { label: "All", value: -1 },
+                        { label: "Todos", value: -1 },
                       ]}
                       colSpan={8}
                       count={rows.length}
@@ -671,7 +671,7 @@ const UsersList: React.FC = () => {
                       slotProps={{
                         select: {
                           inputProps: {
-                            "aria-label": "rows per page",
+                            "aria-label": "filas por página",
                           },
                           native: true,
                         },

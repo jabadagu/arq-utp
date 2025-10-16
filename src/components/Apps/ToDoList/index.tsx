@@ -176,137 +176,137 @@ function createData(
 const initialRows = [
   createData(
     "#850",
-    "Network Infrastructure",
+    "Organizar Boda de Verano",
     "Oliver Clark",
-    "30 Apr 2024",
-    "High",
-    "Finished",
+    "30 Abr 2024",
+    "Alta",
+    "Completado",
     "#"
   ),
   createData(
     "#851",
-    "Cloud Migration",
+    "Planificar Cumpleaños de 15 Años",
     "Ethan Baker",
-    "25 Apr 2024",
-    "Low",
-    "Pending",
+    "25 Abr 2024",
+    "Baja",
+    "Pendiente",
     "#"
   ),
   createData(
     "#852",
-    "Website Revamp",
+    "Preparar Fiesta de Aniversario",
     "Sophia Carter",
-    "20 Apr 2024",
-    "Medium",
-    "In Progress",
+    "20 Abr 2024",
+    "Media",
+    "En Progreso",
     "#"
   ),
   createData(
     "#853",
-    "Mobile Application",
+    "Coordinar Bautizo Infantil",
     "Ava Cooper",
-    "15 Apr 2024",
-    "High",
-    "Finished",
+    "15 Abr 2024",
+    "Alta",
+    "Completado",
     "#"
   ),
   createData(
     "#854",
-    "System Deployment",
+    "Organizar Baby Shower",
     "Isabella Evans",
-    "10 Apr 2024",
-    "Low",
-    "Cancelled",
+    "10 Abr 2024",
+    "Baja",
+    "Cancelado",
     "#"
   ),
   createData(
     "#855",
-    "Network Infrastructure",
+    "Gestionar Evento Corporativo",
     "Oliver Clark",
-    "30 Apr 2024",
-    "High",
-    "Finished",
+    "30 Abr 2024",
+    "Alta",
+    "Completado",
     "#"
   ),
   createData(
     "#856",
-    "Cloud Migration",
+    "Planificar Fiesta de Graduación",
     "Ethan Baker",
-    "25 Apr 2024",
-    "Low",
-    "Pending",
+    "25 Abr 2024",
+    "Baja",
+    "Pendiente",
     "#"
   ),
   createData(
     "#857",
-    "Website Revamp",
+    "Preparar Cena de Gala",
     "Sophia Carter",
-    "20 Apr 2024",
-    "Medium",
-    "In Progress",
+    "20 Abr 2024",
+    "Media",
+    "En Progreso",
     "#"
   ),
   createData(
     "#858",
-    "Mobile Application",
+    "Organizar Primera Comunión",
     "Ava Cooper",
-    "15 Apr 2024",
-    "High",
-    "Finished",
+    "15 Abr 2024",
+    "Alta",
+    "Completado",
     "#"
   ),
   createData(
     "#869",
-    "System Deployment",
+    "Coordinar Fiesta Temática",
     "Isabella Evans",
-    "10 Apr 2024",
-    "Low",
-    "Cancelled",
+    "10 Abr 2024",
+    "Baja",
+    "Cancelado",
     "#"
   ),
   createData(
     "#870",
-    "Hotel Management System",
+    "Planificar Boda en la Playa",
     "Jhon Evans",
-    "15 Apr 2024",
-    "High",
-    "Finished",
+    "15 Abr 2024",
+    "Alta",
+    "Completado",
     "#"
   ),
   createData(
     "#871",
-    "Send Proposal to APR Ltd",
+    "Enviar Propuesta Evento APR",
     "Roberto Cruz",
-    "25 Apr 2024",
-    "Low",
-    "Pending",
+    "25 Abr 2024",
+    "Baja",
+    "Pendiente",
     "#"
   ),
   createData(
     "#872",
-    "Python Upgrade",
-    "Juli Johnso",
-    "20 Apr 2024",
-    "Medium",
-    "In Progress",
+    "Organizar Fiesta Infantil",
+    "Juli Johnson",
+    "20 Abr 2024",
+    "Media",
+    "En Progreso",
     "#"
   ),
   createData(
     "#873",
     "Programar reunión con Eventos Peru",
     "Catalina Engles",
-    "15 Apr 2024",
-    "High",
-    "Finished",
+    "15 Abr 2024",
+    "Alta",
+    "Completado",
     "#"
   ),
   createData(
     "#874",
-    "Engineering Lite Touch",
+    "Coordinar Reunión Familiar",
     "Louis Nagle",
-    "10 Apr 2024",
-    "Low",
-    "Cancelled",
+    "10 Abr 2024",
+    "Baja",
+    "Cancelado",
     "#"
   ),
 ].sort((b, a) => (a.id < b.id ? -1 : 1));
@@ -392,7 +392,7 @@ const ToDoList: React.FC = () => {
             <input
               type='text'
               className='t-input'
-              placeholder='Search task here...'
+              placeholder='Buscar tarea aquí...'
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -409,7 +409,8 @@ const ToDoList: React.FC = () => {
               padding: "6px 13px",
             }}
             color='primary'>
-            <AddIcon sx={{ position: "relative", top: "-1px" }} /> Add New Task
+            <AddIcon sx={{ position: "relative", top: "-1px" }} /> Agregar Nuevo
+            Evento
           </Button>
         </Box>
 
@@ -456,7 +457,7 @@ const ToDoList: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Ticket Title
+                    Título del Evento
                   </TableCell>
 
                   <TableCell
@@ -466,7 +467,7 @@ const ToDoList: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Assigned To
+                    Asignado a
                   </TableCell>
 
                   <TableCell
@@ -476,7 +477,7 @@ const ToDoList: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Due Date
+                    Fecha Límite
                   </TableCell>
 
                   <TableCell
@@ -486,7 +487,7 @@ const ToDoList: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Priority
+                    Prioridad
                   </TableCell>
 
                   <TableCell
@@ -496,7 +497,7 @@ const ToDoList: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Status
+                    Estado
                   </TableCell>
 
                   <TableCell
@@ -506,7 +507,7 @@ const ToDoList: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Action
+                    Acción
                   </TableCell>
                 </TableRow>
               </TableHead>
@@ -694,7 +695,7 @@ const ToDoList: React.FC = () => {
                 fontSize: { xs: "16px", md: "18px" },
               }}
               className='text-black'>
-              Add New Task
+              Agregar Nuevo Evento
             </Typography>
 
             <IconButton aria-label='remove' size='small' onClick={handleClose}>
@@ -720,7 +721,7 @@ const ToDoList: React.FC = () => {
                         mb: "12px",
                       }}
                       className='text-black'>
-                      Task Name
+                      Nombre del Evento
                     </Typography>
 
                     <TextField
@@ -729,7 +730,7 @@ const ToDoList: React.FC = () => {
                       required
                       fullWidth
                       id='taskName'
-                      label='Task Name'
+                      label='Nombre del Evento'
                       autoFocus
                       InputProps={{
                         style: { borderRadius: 8 },
@@ -746,18 +747,18 @@ const ToDoList: React.FC = () => {
                         mb: "12px",
                       }}
                       className='text-black'>
-                      Assigned To
+                      Asignado a
                     </Typography>
 
                     <FormControl fullWidth>
                       <InputLabel id='demo-simple-select-label'>
-                        Select
+                        Seleccionar
                       </InputLabel>
                       <Select
                         labelId='demo-simple-select-label'
                         id='demo-simple-select'
                         value={assignedTo}
-                        label='Select'
+                        label='Seleccionar'
                         onChange={handleChangeAssignedTo}>
                         <MenuItem value={0}>Shawn Kennedy</MenuItem>
                         <MenuItem value={1}>Roberto Cruz</MenuItem>
@@ -778,7 +779,7 @@ const ToDoList: React.FC = () => {
                         mb: "12px",
                       }}
                       className='text-black'>
-                      Due Date
+                      Fecha Límite
                     </Typography>
 
                     <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -804,22 +805,22 @@ const ToDoList: React.FC = () => {
                         mb: "12px",
                       }}
                       className='text-black'>
-                      Priority
+                      Prioridad
                     </Typography>
 
                     <FormControl fullWidth>
                       <InputLabel id='demo-simple-select-label'>
-                        Select
+                        Seleccionar
                       </InputLabel>
                       <Select
                         labelId='demo-simple-select-label'
                         id='demo-simple-select'
                         value={priority}
-                        label='Select'
+                        label='Seleccionar'
                         onChange={handleChangePriority}>
-                        <MenuItem value={0}>High</MenuItem>
-                        <MenuItem value={1}>Medium</MenuItem>
-                        <MenuItem value={2}>Low</MenuItem>
+                        <MenuItem value={0}>Alta</MenuItem>
+                        <MenuItem value={1}>Media</MenuItem>
+                        <MenuItem value={2}>Baja</MenuItem>
                       </Select>
                     </FormControl>
                   </Grid>
@@ -833,23 +834,23 @@ const ToDoList: React.FC = () => {
                         mb: "12px",
                       }}
                       className='text-black'>
-                      Status
+                      Estado
                     </Typography>
 
                     <FormControl fullWidth>
                       <InputLabel id='demo-simple-select-label'>
-                        Select
+                        Seleccionar
                       </InputLabel>
                       <Select
                         labelId='demo-simple-select-label'
                         id='demo-simple-select'
                         value={status}
-                        label='Select'
+                        label='Seleccionar'
                         onChange={handleChangeStatus}>
-                        <MenuItem value={0}>In Progress</MenuItem>
-                        <MenuItem value={1}>Pending</MenuItem>
-                        <MenuItem value={2}>Finished</MenuItem>
-                        <MenuItem value={3}>Cancelled</MenuItem>
+                        <MenuItem value={0}>En Progreso</MenuItem>
+                        <MenuItem value={1}>Pendiente</MenuItem>
+                        <MenuItem value={2}>Completado</MenuItem>
+                        <MenuItem value={3}>Cancelado</MenuItem>
                       </Select>
                     </FormControl>
                   </Grid>
@@ -874,7 +875,7 @@ const ToDoList: React.FC = () => {
                           padding: "11px 30px",
                           color: "#fff !important",
                         }}>
-                        Cancel
+                        Cancelar
                       </Button>
 
                       <Button
@@ -895,7 +896,7 @@ const ToDoList: React.FC = () => {
                           }}
                           className='mr-5px'
                         />{" "}
-                        Create
+                        Crear
                       </Button>
                     </Box>
                   </Grid>

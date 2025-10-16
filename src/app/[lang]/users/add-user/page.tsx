@@ -7,17 +7,17 @@ export default function Page() {
     <>
       {/* Breadcrumb */}
       <div className='breadcrumb-card'>
-        <h5>Add User</h5>
+        <h5>Agregar Usuario</h5>
 
         <ul className='breadcrumb'>
           <li>
             <NextLink href='/apps/to-do-list'>
               <i className='material-symbols-outlined'>home</i>
-              Dashboard
+              Panel de Control
             </NextLink>
           </li>
-          <li>Users</li>
-          <li>Add User</li>
+          <li>Usuarios</li>
+          <li>Agregar Usuario</li>
         </ul>
       </div>
 

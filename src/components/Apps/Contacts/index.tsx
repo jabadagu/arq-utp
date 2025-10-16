@@ -126,220 +126,220 @@ const rows = [
     "/images/users/user6.jpg",
     "Oliver Khan",
     "oliver.khan@eventosperu.com",
-    "+1 555-123-4567",
+    "+51 955-123-4567",
     "19 Jun 2024",
-    "ABC Corporation",
+    "Bodas Elegantes SAC",
     50,
-    "Active"
+    "Activo"
   ),
   createData(
     "#851",
     "/images/users/user7.jpg",
     "Carolyn Barnes",
     "carolyn.barnes@eventosperu.com",
-    "+1 555-987-6543",
+    "+51 955-987-6543",
     "18 Jun 2024",
-    "XYZ Ltd",
+    "Fiestas & Celebraciones",
     35,
-    "Active"
+    "Activo"
   ),
   createData(
     "#852",
     "/images/users/user8.jpg",
     "Donna Miller",
     "donna.miller@eventosperu.com",
-    "+1 555-456-7890",
+    "+51 955-456-7890",
     "17 Jun 2024",
-    "Tech Solutions",
+    "Eventos Infantiles Perú",
     40,
-    "Deactivate"
+    "Inactivo"
   ),
   createData(
     "#853",
     "/images/users/user9.jpg",
     "Barbara Cross",
     "barbara.cross@eventosperu.com",
-    "+1 555-369-7878",
+    "+51 955-369-7878",
     "16 Jun 2024",
-    "Global Solutions",
+    "Catering Gourmet Lima",
     25,
-    "Active"
+    "Activo"
   ),
   createData(
     "#854",
     "/images/users/user10.jpg",
     "Rebecca Block",
     "rebecca.block@eventosperu.com",
-    "+1 555-658-4488",
+    "+51 955-658-4488",
     "15 Jun 2024",
-    "Acme Industries",
+    "Decoraciones Temáticas",
     27,
-    "Deactivate"
+    "Inactivo"
   ),
   createData(
     "#855",
     "/images/users/user11.jpg",
     "Ramiro McCarty",
     "ramiro.mccarty@eventosperu.com",
-    "+1 555-558-9966",
+    "+51 955-558-9966",
     "14 Jun 2024",
-    "Synergy Ltd",
+    "Eventos Corporativos Plus",
     16,
-    "Active"
+    "Activo"
   ),
   createData(
     "#856",
     "/images/users/user12.jpg",
     "Robert Fairweather",
     "robert.fairweather@eventosperu.com",
-    "+1 555-357-5888",
+    "+51 955-357-5888",
     "13 Jun 2024",
-    "Summit Solutions",
+    "Quinceañeros Soñados",
     38,
-    "Active"
+    "Activo"
   ),
   createData(
     "#857",
     "/images/users/user13.jpg",
     "Marcelino Haddock",
     "marcelino.haddock@eventosperu.com",
-    "+1 555-456-8877",
+    "+51 955-456-8877",
     "12 Jun 2024",
-    "Strategies Ltd",
+    "Aniversarios Memorables",
     15,
-    "Active"
+    "Activo"
   ),
   createData(
     "#858",
     "/images/users/user14.jpg",
     "Thomas Wilson",
     "thomas.wilson@eventosperu.com",
-    "+1 555-622-4488",
+    "+51 955-622-4488",
     "11 Jun 2024",
-    "Tech Enterprises",
+    "Baby Shower Dreams",
     41,
-    "Deactivate"
+    "Inactivo"
   ),
   createData(
     "#859",
     "/images/users/user15.jpg",
     "Nathaniel Hulsey",
     "nathaniel.hulsey@eventosperu.com",
-    "+1 555-225-4488",
+    "+51 955-225-4488",
     "10 Jun 2024",
-    "Synetic Solutions",
+    "Graduaciones Especiales",
     29,
-    "Active"
+    "Activo"
   ),
   createData(
     "#860",
     "/images/users/user16.jpg",
     "Sophia Turner",
     "sophia.turner@eventosperu.com",
-    "+1 555-123-4117",
+    "+51 955-123-4117",
     "9 Jun 2024",
-    "Innovatech",
+    "Bautizos y Comuniones",
     35,
-    "Active"
+    "Activo"
   ),
   createData(
     "#861",
     "/images/users/user17.jpg",
     "Liam Johnson",
     "liam.johnson@eventosperu.com",
-    "+1 555-911-6543",
+    "+51 955-911-6543",
     "8 Jun 2024",
-    "NextGen Solutions",
+    "Eventos Sociales Premium",
     56,
-    "Active"
+    "Activo"
   ),
   createData(
     "#862",
     "/images/users/user18.jpg",
     "Emma Williams",
     "emma.williams@eventosperu.com",
-    "+1 555-456-7811",
+    "+51 955-456-7811",
     "7 Jun 2024",
-    "Tech Innovators",
+    "Fiestas de Gala",
     45,
-    "Deactivate"
+    "Inactivo"
   ),
   createData(
     "#863",
     "/images/users/user19.jpg",
     "Noah Brown",
     "noah.brown@eventosperu.com",
-    "+1 555-369-2278",
+    "+51 955-369-2278",
     "6 Jun 2024",
-    "Global Ventures",
+    "Bodas en la Playa",
     125,
-    "Active"
+    "Activo"
   ),
   createData(
     "#864",
     "/images/users/user20.jpg",
     "Ava Davis",
     "ava.davis@eventosperu.com",
-    "+1 555-644-4488",
+    "+51 955-644-4488",
     "5 Jun 2024",
-    "Acme Corp",
+    "Cumpleaños Temáticos",
     20,
-    "Deactivate"
+    "Inactivo"
   ),
   createData(
     "#865",
     "/images/users/user21.jpg",
     "William Martinez",
     "william.martinez@eventosperu.com",
-    "+1 555-558-9336",
+    "+51 955-558-9336",
     "4 Jun 2024",
-    "Synergy Innovations",
+    "Eventos Familiares",
     49,
-    "Active"
+    "Activo"
   ),
   createData(
     "#866",
     "/images/users/user22.jpg",
     "Isabella Garcia",
     "isabella.garcia@eventosperu.com",
-    "+1 555-345-5888",
+    "+51 955-345-5888",
     "3 Jun 2024",
-    "Summit Tech",
+    "Cenas Románticas",
     77,
-    "Active"
+    "Activo"
   ),
   createData(
     "#867",
     "/images/users/user23.jpg",
     "James Rodriguez",
     "james.rodriguez@eventosperu.com",
-    "+1 555-456-8866",
+    "+51 955-456-8866",
     "2 Jun 2024",
-    "Strategy Corp",
+    "Reuniones Empresariales",
     155,
-    "Active"
+    "Activo"
   ),
   createData(
     "#868",
     "/images/users/user24.jpg",
     "Mia Hernandez",
     "mia.hernandez@eventosperu.com",
-    "+1 555-789-1234",
+    "+51 955-789-1234",
     "1 Jun 2024",
-    "Tech Dynamics",
+    "Fiestas Infantiles Magic",
     60,
-    "Active"
+    "Activo"
   ),
   createData(
     "#869",
     "/images/users/user25.jpg",
     "Alexander Lopez",
     "alexander.lopez@eventosperu.com",
-    "+1 555-321-9876",
+    "+51 955-321-9876",
     "31 May 2024",
-    "Innovative Solutions",
+    "Eventos de Navidad",
     85,
-    "Deactivate"
+    "Inactivo"
   ),
 ].sort((b, a) => (a.id < b.id ? -1 : 1));
 
@@ -406,7 +406,7 @@ const Contacts: React.FC = () => {
             <input
               type='text'
               className='t-input'
-              placeholder='Search here...'
+              placeholder='Buscar aquí...'
               value={searchTerm}
               onChange={(e) => {
                 setSearchTerm(e.target.value);
@@ -417,17 +417,17 @@ const Contacts: React.FC = () => {
 
           <Box>
             <FormControl sx={{ minWidth: 115 }} size='small'>
-              <InputLabel id='demo-select-small'>Select</InputLabel>
+              <InputLabel id='demo-select-small'>Seleccionar</InputLabel>
               <Select
                 labelId='demo-simple-select-label'
                 id='demo-simple-select'
                 value={select}
-                label='select'
+                label='Seleccionar'
                 onChange={handleChange}
                 className='select'>
-                <MenuItem value={0}>All</MenuItem>
-                <MenuItem value={1}>Active</MenuItem>
-                <MenuItem value={2}>Deactivate</MenuItem>
+                <MenuItem value={0}>Todos</MenuItem>
+                <MenuItem value={1}>Activo</MenuItem>
+                <MenuItem value={2}>Inactivo</MenuItem>
               </Select>
             </FormControl>
           </Box>
@@ -476,7 +476,7 @@ const Contacts: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    User
+                    Usuario
                   </TableCell>
 
                   <TableCell
@@ -486,7 +486,7 @@ const Contacts: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Email
+                    Correo
                   </TableCell>
 
                   <TableCell
@@ -496,7 +496,7 @@ const Contacts: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Phone
+                    Teléfono
                   </TableCell>
 
                   <TableCell
@@ -506,7 +506,7 @@ const Contacts: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Last Contacted
+                    Último Contacto
                   </TableCell>
 
                   <TableCell
@@ -516,7 +516,7 @@ const Contacts: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Company
+                    Empresa
                   </TableCell>
 
                   <TableCell
@@ -526,7 +526,7 @@ const Contacts: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Lead Score
+                    Puntuación
                   </TableCell>
 
                   <TableCell
@@ -536,7 +536,7 @@ const Contacts: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Status
+                    Estado
                   </TableCell>
 
                   <TableCell
@@ -546,7 +546,7 @@ const Contacts: React.FC = () => {
                       fontSize: "14px",
                     }}
                     className='text-black border-bottom'>
-                    Action
+                    Acción
                   </TableCell>
                 </TableRow>
               </TableHead>

@@ -10,23 +10,23 @@
   "leftSideMenu": [
     {
       "type": "sub-title",
-      "title": "APPS & PAGES"
+      "title": "APPS & PÁGINAS"
     },
     {
       "type": "link",
-      "title": "To Do List",
+      "title": "Lista de eventos",
       "icon": "format_list_bulleted",
       "href": "/apps/to-do-list/"
     },
     {
       "type": "link",
-      "title": "Calendar",
+      "title": "Calendario",
       "icon": "date_range",
       "href": "/apps/calendar/"
     },
     {
       "type": "link",
-      "title": "Contacts",
+      "title": "Contactos",
       "icon": "contact_page",
       "href": "/apps/contacts/"
     },
@@ -36,7 +36,7 @@
     },
     {
       "type": "link",
-      "title": "Members",
+      "title": "Proveedores",
       "icon": "people",
       "href": "/members/"
     },
@@ -52,17 +52,17 @@
     },
     {
       "type": "accordion",
-      "title": "Settings",
+      "title": "Configuración",
       "icon": "settings",
       "accordionPanel": "panel8",
       "subItems": [
-        { "title": "Account Settings", "href": "/settings/" },
-        { "title": "Change Password", "href": "/settings/change-password/" }
+        { "title": "Configuración de la cuenta", "href": "/settings/" },
+        { "title": "Cambiar contraseña", "href": "/settings/change-password/" }
       ]
     },
     {
       "type": "link",
-      "title": "Logout",
+      "title": "Cerrar sesión",
       "icon": "logout",
       "href": "/authentication/logout/"
     }
@@ -75,47 +75,47 @@
         "icon": "deployed_code",
         "submenu": [
           {
-            "title": "To Do List",
+            "title": "Lista de eventos",
             "href": "/apps/to-do-list/",
             "icon": "format_list_bulleted"
           },
           {
-            "title": "Calendar",
+            "title": "Calendario",
             "href": "/apps/calendar/",
             "icon": "date_range"
           },
           {
-            "title": "Contacts",
+            "title": "Contactos",
             "href": "/apps/contacts/",
             "icon": "contact_page"
           }
         ]
       },
       {
-        "title": "Modules",
+        "title": "Modulos",
         "icon": "token",
         "submenu": [
-          { "title": "Members", "href": "/members/", "icon": "people" },
+          { "title": "Proveedores", "href": "/members/", "icon": "people" },
           { "title": "Usuarios", "href": "/users/", "icon": "people" }
         ]
       },
       {
-        "title": "Others",
+        "title": "Otros",
         "icon": "open_run",
         "submenu": [
           {
-            "title": "Settings",
+            "title": "Configuración",
             "icon": "settings",
             "submenu": [
-              { "title": "Account Settings", "href": "/settings/" },
+              { "title": "Configuración de la cuenta", "href": "/settings/" },
               {
-                "title": "Change Password",
+                "title": "Cambiar contraseña",
                 "href": "/settings/change-password/"
               }
             ]
           },
           {
-            "title": "Logout",
+            "title": "Cerrar sesión",
             "href": "/authentication/logout",
             "icon": "logout"
           }

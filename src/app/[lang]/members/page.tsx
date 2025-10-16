@@ -8,16 +8,16 @@ export default function Page() {
     <RequireAuth>
       {/* Breadcrumb */}
       <div className='breadcrumb-card'>
-        <h5>Members</h5>
+        <h5>Proveedores</h5>
 
         <ul className='breadcrumb'>
           <li>
             <NextLink href='/apps/to-do-list'>
               <i className='material-symbols-outlined'>home</i>
-              Dashboard
+              Panel de Control
             </NextLink>
           </li>
-          <li>Members</li>
+          <li>Proveedores</li>
         </ul>
       </div>
 

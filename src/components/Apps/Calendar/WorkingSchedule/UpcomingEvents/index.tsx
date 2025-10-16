@@ -8,12 +8,11 @@ import { Pagination } from "swiper/modules";
 const UpcomingEvents: React.FC = () => {
   return (
     <>
-      <Box className="upcoming-events">
+      <Box className='upcoming-events'>
         <Typography
-          component="span"
-          sx={{ fontWeight: "500", mb: "10px", display: "block" }}
-        >
-          Upcoming Events:
+          component='span'
+          sx={{ fontWeight: "500", mb: "10px", display: "block" }}>
+          Próximos Eventos:
         </Typography>
 
         <Swiper
@@ -21,16 +20,14 @@ const UpcomingEvents: React.FC = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
-        >
+          modules={[Pagination]}>
           <SwiperSlide>
             <Box
               sx={{
                 display: "flex",
                 alignItems: "top",
                 gap: "10px",
-              }}
-            >
+              }}>
               <Box
                 sx={{
                   bgcolor: "primary.main",
@@ -39,21 +36,19 @@ const UpcomingEvents: React.FC = () => {
                   borderRadius: "2px",
                   position: "relative",
                   top: "6px",
-                }}
-              ></Box>
+                }}></Box>
 
               <Box>
                 <Typography
-                  variant="h6"
+                  variant='h6'
                   sx={{ fontWeight: "600", fontSize: "13px", mb: "3px" }}
-                  className="text-black"
-                >
-                  Pythons Unleashed: A Development Expedition
+                  className='text-black'>
+                  Boda Jardín Primavera
                 </Typography>
 
-                <Typography component="div" fontSize="12px">
-                  <Typography component="span" fontSize="12px" color="primary">
-                    15 April 2024
+                <Typography component='div' fontSize='12px'>
+                  <Typography component='span' fontSize='12px' color='primary'>
+                    15 Abril 2024
                   </Typography>
                   - 12.00 PM - 6.00 PM
                 </Typography>
@@ -67,8 +62,7 @@ const UpcomingEvents: React.FC = () => {
                 display: "flex",
                 alignItems: "top",
                 gap: "10px",
-              }}
-            >
+              }}>
               <Box
                 sx={{
                   bgcolor: "primary.main",
@@ -77,23 +71,21 @@ const UpcomingEvents: React.FC = () => {
                   borderRadius: "2px",
                   position: "relative",
                   top: "6px",
-                }}
-              ></Box>
+                }}></Box>
 
               <Box>
                 <Typography
-                  variant="h6"
+                  variant='h6'
                   sx={{ fontWeight: "600", fontSize: "13px", mb: "3px" }}
-                  className="text-black"
-                >
-                  Pythons Unleashed: A Development Expedition
+                  className='text-black'>
+                  Cumpleaños Infantil Frozen
                 </Typography>
 
-                <Typography component="div" fontSize="12px">
-                  <Typography component="span" fontSize="12px" color="primary">
-                    15 April 2024
+                <Typography component='div' fontSize='12px'>
+                  <Typography component='span' fontSize='12px' color='primary'>
+                    20 Abril 2024
                   </Typography>
-                  - 12.00 PM - 6.00 PM
+                  - 3.00 PM - 7.00 PM
                 </Typography>
               </Box>
             </Box>
@@ -105,8 +97,7 @@ const UpcomingEvents: React.FC = () => {
                 display: "flex",
                 alignItems: "top",
                 gap: "10px",
-              }}
-            >
+              }}>
               <Box
                 sx={{
                   bgcolor: "primary.main",
@@ -115,23 +106,21 @@ const UpcomingEvents: React.FC = () => {
                   borderRadius: "2px",
                   position: "relative",
                   top: "6px",
-                }}
-              ></Box>
+                }}></Box>
 
               <Box>
                 <Typography
-                  variant="h6"
+                  variant='h6'
                   sx={{ fontWeight: "600", fontSize: "13px", mb: "3px" }}
-                  className="text-black"
-                >
-                  Pythons Unleashed: A Development Expedition
+                  className='text-black'>
+                  Aniversario de Oro
                 </Typography>
 
-                <Typography component="div" fontSize="12px">
-                  <Typography component="span" fontSize="12px" color="primary">
-                    15 April 2024
+                <Typography component='div' fontSize='12px'>
+                  <Typography component='span' fontSize='12px' color='primary'>
+                    25 Abril 2024
                   </Typography>
-                  - 12.00 PM - 6.00 PM
+                  - 7.00 PM - 11.00 PM
                 </Typography>
               </Box>
             </Box>

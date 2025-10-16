@@ -19,10 +19,10 @@ import {
   HtmlButton,
   Separator,
   Toolbar,
-} from "react-simple-wysiwyg"; 
+} from "react-simple-wysiwyg";
 
 export default function CustomEditor() {
-  const [value, setValue] = useState<string>("Type your message here...");
+  const [value, setValue] = useState<string>("Escribe tu mensaje aquí...");
 
   function onChange(e: ContentEditableEvent) {
     setValue(e.target.value);
@@ -34,8 +34,7 @@ export default function CustomEditor() {
         value={value}
         onChange={onChange}
         style={{ minHeight: "200px" }}
-        className="rsw-editor"
-      >
+        className='rsw-editor'>
         <Toolbar>
           <BtnUndo />
           <BtnRedo />

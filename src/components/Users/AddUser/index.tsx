@@ -66,12 +66,12 @@ const AddUser: React.FC = () => {
                           display: "block",
                         }}
                         className='text-black'>
-                        User ID
+                        ID de Usuario
                       </Typography>
 
                       <TextField
-                        label='Enter user id'
-                        placeholder='E.g. #JAN-123'
+                        label='Ingresa el ID de usuario'
+                        placeholder='Ej. #JAN-123'
                         variant='filled'
                         id='userId'
                         name='userId'
@@ -109,12 +109,12 @@ const AddUser: React.FC = () => {
                           display: "block",
                         }}
                         className='text-black'>
-                        User Name
+                        Nombre del Usuario
                       </Typography>
 
                       <TextField
-                        label='Enter user name'
-                        placeholder='E.g. Olivia John'
+                        label='Ingresa el nombre del usuario'
+                        placeholder='Ej. Olivia John'
                         variant='filled'
                         id='userName'
                         name='userName'
@@ -152,11 +152,11 @@ const AddUser: React.FC = () => {
                           display: "block",
                         }}
                         className='text-black'>
-                        Email Address
+                        Correo Electrónico
                       </Typography>
 
                       <TextField
-                        label='Enter email address'
+                        label='Ingresa el correo electrónico'
                         placeholder='Ej. olivia@eventosperu.com'
                         variant='filled'
                         id='emailAddress'
@@ -194,16 +194,16 @@ const AddUser: React.FC = () => {
                         display: "block",
                       }}
                       className='text-black'>
-                      Location
+                      Ubicación
                     </Typography>
 
                     <FormControl fullWidth>
-                      <InputLabel id='brand-name-label'>Select</InputLabel>
+                      <InputLabel id='brand-name-label'>Seleccionar</InputLabel>
                       <Select
                         labelId='brand-name-label'
                         id='brand-name'
                         value={location}
-                        label='Select'
+                        label='Seleccionar'
                         onChange={handleLocationChange}
                         sx={{
                           "& fieldset": {
@@ -211,17 +211,17 @@ const AddUser: React.FC = () => {
                             borderRadius: "7px",
                           },
                         }}>
-                        <MenuItem value={0}>Washington D.C </MenuItem>
-                        <MenuItem value={1}>Chicago</MenuItem>
-                        <MenuItem value={2}>Oklahoma City</MenuItem>
-                        <MenuItem value={3}>San Diego</MenuItem>
-                        <MenuItem value={4}>Los Angeles</MenuItem>
-                        <MenuItem value={5}>Las Vegas</MenuItem>
-                        <MenuItem value={6}>San Francisco</MenuItem>
-                        <MenuItem value={7}>Istanbul</MenuItem>
-                        <MenuItem value={8}>London</MenuItem>
-                        <MenuItem value={9}>Dubai</MenuItem>
-                        <MenuItem value={10}>Antalya</MenuItem>
+                        <MenuItem value={0}>Lima</MenuItem>
+                        <MenuItem value={1}>Arequipa</MenuItem>
+                        <MenuItem value={2}>Trujillo</MenuItem>
+                        <MenuItem value={3}>Cusco</MenuItem>
+                        <MenuItem value={4}>Piura</MenuItem>
+                        <MenuItem value={5}>Chiclayo</MenuItem>
+                        <MenuItem value={6}>Tacna</MenuItem>
+                        <MenuItem value={7}>Ica</MenuItem>
+                        <MenuItem value={8}>Huancayo</MenuItem>
+                        <MenuItem value={9}>Puno</MenuItem>
+                        <MenuItem value={10}>Ayacucho</MenuItem>
                       </Select>
                     </FormControl>
                   </Box>
@@ -239,12 +239,12 @@ const AddUser: React.FC = () => {
                           display: "block",
                         }}
                         className='text-black'>
-                        Phone Number
+                        Número de Teléfono
                       </Typography>
 
                       <TextField
-                        label='Enter phone number'
-                        placeholder='E.g. +1 555-445-4455'
+                        label='Ingresa el número de teléfono'
+                        placeholder='Ej. +51 555-445-4455'
                         variant='filled'
                         id='phoneNumber'
                         name='phoneNumber'
@@ -282,12 +282,12 @@ const AddUser: React.FC = () => {
                           display: "block",
                         }}
                         className='text-black'>
-                        Projects
+                        Proyectos
                       </Typography>
 
                       <TextField
-                        label='Enter projects'
-                        placeholder='E.g. 27'
+                        label='Ingresa la cantidad de proyectos'
+                        placeholder='Ej. 27'
                         variant='filled'
                         id='projects'
                         name='projects'
@@ -324,7 +324,7 @@ const AddUser: React.FC = () => {
                         display: "block",
                       }}
                       className='text-black'>
-                      Add Some Info
+                      Agrega Información
                     </Typography>
 
                     <CustomEditor />
@@ -347,8 +347,8 @@ const AddUser: React.FC = () => {
                       </Typography>
 
                       <TextField
-                        label='Enter facebook profile link'
-                        placeholder='E.g. https://www.facebook.com/'
+                        label='Ingresa el enlace del perfil de Facebook'
+                        placeholder='Ej. https://www.facebook.com/'
                         variant='filled'
                         id='facebookLink'
                         name='facebookLink'
@@ -390,8 +390,8 @@ const AddUser: React.FC = () => {
                       </Typography>
 
                       <TextField
-                        label='Enter x profile link'
-                        placeholder='E.g. https://x.com/'
+                        label='Ingresa el enlace del perfil de X'
+                        placeholder='Ej. https://x.com/'
                         variant='filled'
                         id='x'
                         name='x'
@@ -430,12 +430,12 @@ const AddUser: React.FC = () => {
                           display: "block",
                         }}
                         className='text-black'>
-                        Linkedin
+                        LinkedIn
                       </Typography>
 
                       <TextField
-                        label='Enter linkedin profile link'
-                        placeholder='E.g. https://www.linkedin.com/'
+                        label='Ingresa el enlace del perfil de LinkedIn'
+                        placeholder='Ej. https://www.linkedin.com/'
                         variant='filled'
                         id='linkedinLink'
                         name='linkedinLink'
@@ -477,8 +477,8 @@ const AddUser: React.FC = () => {
                       </Typography>
 
                       <TextField
-                        label='Enter github profile link'
-                        placeholder='E.g. https://github.com/'
+                        label='Ingresa el enlace del perfil de GitHub'
+                        placeholder='Ej. https://github.com/'
                         variant='filled'
                         id='githubLink'
                         name='githubLink'
@@ -513,7 +513,7 @@ const AddUser: React.FC = () => {
                       mb: "12px",
                     }}
                     className='text-black'>
-                    Upload Product Images
+                    Subir Imágenes del Usuario
                   </Typography>
 
                   <FileUpload onFileSelect={handleFileSelect} />
@@ -542,7 +542,7 @@ const AddUser: React.FC = () => {
                     fontWeight: 700,
                   }}
                   className='text-black'>
-                  Privacy Policy
+                  Política de Privacidad
                 </Typography>
               </Box>
 
@@ -554,15 +554,15 @@ const AddUser: React.FC = () => {
                   <Box>
                     <FormControlLabel
                       control={<Checkbox />}
-                      label='Allow users to show your email'
+                      label='Permitir mostrar tu correo'
                     />
                     <FormControlLabel
                       control={<Checkbox />}
-                      label='Allow users to show your experiences'
+                      label='Permitir mostrar tu experiencia'
                     />
                     <FormControlLabel
                       control={<Checkbox />}
-                      label='Allow users to show your followers'
+                      label='Permitir mostrar tus seguidores'
                     />
                   </Box>
                 </Grid>
@@ -578,16 +578,16 @@ const AddUser: React.FC = () => {
                         display: "block",
                       }}
                       className='text-black'>
-                      Select Your Skills
+                      Selecciona Tus Habilidades
                     </Typography>
 
                     <FormControl fullWidth>
-                      <InputLabel id='brand-name-label'>Select</InputLabel>
+                      <InputLabel id='brand-name-label'>Seleccionar</InputLabel>
                       <Select
                         labelId='brand-name-label'
                         id='brand-name'
                         value={skills}
-                        label='Select'
+                        label='Seleccionar'
                         onChange={handleSkillsChange}
                         sx={{
                           "& fieldset": {
@@ -595,11 +595,11 @@ const AddUser: React.FC = () => {
                             borderRadius: "7px",
                           },
                         }}>
-                        <MenuItem value={0}>Leadership</MenuItem>
-                        <MenuItem value={1}>Project Management</MenuItem>
-                        <MenuItem value={2}>Data Analysis</MenuItem>
-                        <MenuItem value={3}>Teamwork</MenuItem>
-                        <MenuItem value={4}>Web Development</MenuItem>
+                        <MenuItem value={0}>Liderazgo</MenuItem>
+                        <MenuItem value={1}>Gestión de Proyectos</MenuItem>
+                        <MenuItem value={2}>Análisis de Datos</MenuItem>
+                        <MenuItem value={3}>Trabajo en Equipo</MenuItem>
+                        <MenuItem value={4}>Desarrollo Web</MenuItem>
                       </Select>
                     </FormControl>
                   </Box>
@@ -634,7 +634,7 @@ const AddUser: React.FC = () => {
                 color: "#fff !important",
                 boxShadow: "none",
               }}>
-              Cancel
+              Cancelar
             </Button>
 
             <Button
@@ -649,7 +649,7 @@ const AddUser: React.FC = () => {
                 color: "#fff !important",
                 boxShadow: "none",
               }}>
-              <i className='material-symbols-outlined'>add</i> Add User
+              <i className='material-symbols-outlined'>add</i> Agregar Usuario
             </Button>
           </Box>
         </Box>

@@ -31,12 +31,13 @@ export default function NotFound() {
               mb: "13px",
               lineHeight: "1.4",
             }}>
-            Looks like we did not find this page, please try again later.
+            Parece que no encontramos esta página, por favor intente nuevamente
+            más tarde.
           </Typography>
 
           <Typography sx={{ lineHight: "1.7", mb: "30px" }}>
-            But no worries! Our team is looking ever where while you wait
-            safely.
+            ¡Pero no se preocupe! Nuestro equipo está buscando por todas partes
+            mientras espera de forma segura.
           </Typography>
 
           <Link
@@ -52,7 +53,7 @@ export default function NotFound() {
               boxShadow: "none",
               display: "inline-block",
             }}>
-            Back to Home
+            Volver al Inicio
           </Link>
         </Box>
       </Box>
