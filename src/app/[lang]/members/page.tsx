@@ -1,7 +1,7 @@
 import * as React from "react";
 import NextLink from "next/link";
-import MembersTable from "@/components/Members/MembersTable";
-import RequireAuth from "@/components/Authentication/RequireAuth";
+import MembersTable from "@/modules/Members/MembersTable";
+import RequireAuth from "@/modules/Authentication/RequireAuth";
 
 export default function Page() {
   return (

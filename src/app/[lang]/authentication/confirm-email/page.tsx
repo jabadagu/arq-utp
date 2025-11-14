@@ -1,6 +1,6 @@
 import * as React from "react";
- 
-import ConfirmEmailForm from "@/components/Authentication/ConfirmEmailForm";
+
+import ConfirmEmailForm from "@/modules/Authentication/ConfirmEmailForm";
 
 export default function Page() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import ValidateEmailForm from "@/components/Authentication/ValidateEmailForm";
+import ValidateEmailForm from "@/modules/Authentication/ValidateEmailForm";
 
 export default async function Home() {
   return <ValidateEmailForm />;

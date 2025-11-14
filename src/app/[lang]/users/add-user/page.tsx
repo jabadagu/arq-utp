@@ -1,6 +1,6 @@
 import * as React from "react";
 import NextLink from "next/link";
-import AddUser from "@/components/Users/AddUser";
+import AddUser from "@/modules/Users/AddUser";
 
 export default function Page() {
   return (

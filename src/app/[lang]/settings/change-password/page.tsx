@@ -1,6 +1,6 @@
 import * as React from "react";
 import NextLink from "next/link";
-import ChangePassword from "@/components/Settings/ChangePassword";
+import ChangePassword from "@/modules/Settings/ChangePassword";
 
 export default function Page() {
   return (

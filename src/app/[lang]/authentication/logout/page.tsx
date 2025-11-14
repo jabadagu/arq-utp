@@ -1,6 +1,6 @@
 import * as React from "react";
- 
-import LogoutContent from "@/components/Authentication/LogoutContent";
+
+import LogoutContent from "@/modules/Authentication/LogoutContent";
 
 export default function Page() {
   return (
