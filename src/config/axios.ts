@@ -8,3 +8,7 @@ export const axiosInstanceLogin = axios.create({
 export const axiosInstanceRegister = axios.create({
   baseURL: Environment.backend.registerMS,
 });
+
+export const axiosInstanceCategory = axios.create({
+  baseURL: Environment.backend.categoryMS,
+});

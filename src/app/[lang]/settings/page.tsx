@@ -1,7 +1,7 @@
 import * as React from "react";
 import NextLink from "next/link";
-import AccountSettings from "@/components/Settings/AccountSettings";
-import RequireAuth from "@/components/Authentication/RequireAuth";
+import AccountSettings from "@/modules/Settings/AccountSettings";
+import RequireAuth from "@/modules/Authentication/RequireAuth";
 
 export default function Page() {
   return (

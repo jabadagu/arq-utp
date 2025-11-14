@@ -1,9 +1,9 @@
 import * as React from "react";
 import NextLink from "next/link";
 import Grid from "@mui/material/Grid";
-import WorkingSchedule from "@/components/Apps/Calendar/WorkingSchedule";
-import FullCalendarDemo from "@/components/Apps/Calendar/FullCalendarDemo";
-import RequireAuth from "@/components/Authentication/RequireAuth";
+import WorkingSchedule from "@/modules/Apps/Calendar/WorkingSchedule";
+import FullCalendarDemo from "@/modules/Apps/Calendar/FullCalendarDemo";
+import RequireAuth from "@/modules/Authentication/RequireAuth";
 
 export default function Page() {
   return (

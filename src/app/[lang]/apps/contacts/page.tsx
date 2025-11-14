@@ -1,7 +1,7 @@
 import * as React from "react";
 import NextLink from "next/link";
-import Contacts from "@/components/Apps/Contacts";
-import RequireAuth from "@/components/Authentication/RequireAuth";
+import Contacts from "@/modules/Apps/Contacts";
+import RequireAuth from "@/modules/Authentication/RequireAuth";
 
 export default function Page() {
   return (

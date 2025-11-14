@@ -14,9 +14,9 @@
     },
     {
       "type": "link",
-      "title": "Lista de eventos",
+      "title": "Categorías",
       "icon": "format_list_bulleted",
-      "href": "/apps/to-do-list/"
+      "href": "/apps/categories/"
     },
     {
       "type": "link",
@@ -75,8 +75,8 @@
         "icon": "deployed_code",
         "submenu": [
           {
-            "title": "Lista de eventos",
-            "href": "/apps/to-do-list/",
+            "title": "Categorías",
+            "href": "/apps/categories/",
             "icon": "format_list_bulleted"
           },
           {

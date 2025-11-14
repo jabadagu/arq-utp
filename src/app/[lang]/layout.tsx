@@ -26,12 +26,12 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "@/theme";
 import { getDictionary } from "./dictionaries";
-import LayoutProvider from "@/providers/LayoutProvider";
-import AppToaster from "@/components/Toaster";
+import LayoutProvider from "@/shared/providers/LayoutProvider";
+import AppToaster from "@/modules/Toaster";
 
 export const metadata = {
-  title: "Eventos Peru - Panel Administrativo con Material Design",
-  description: "React Nextjs 15+ Material Design Admin Dashboard Template",
+  title: "Eventos Peru - Panel Administrativ",
+  description: "Eventos Perú es una plataforma para la gestión de eventos.",
 };
 
 interface RootLayoutProps {

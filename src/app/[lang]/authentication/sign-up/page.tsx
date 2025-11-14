@@ -1,6 +1,6 @@
 import * as React from "react";
- 
-import SignUpForm from "@/components/Authentication/SignUpForm";
+
+import SignUpForm from "@/modules/Authentication/SignUpForm";
 
 export default function Page() {
   return (
