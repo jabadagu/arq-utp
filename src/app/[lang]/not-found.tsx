@@ -41,7 +41,7 @@ export default function NotFound() {
           </Typography>
 
           <Link
-            href={`/${lang}/apps/to-do-list`}
+            href={`/${lang}/apps/categories`}
             sx={{
               bgcolor: "primary.main",
               textTransform: "capitalize",

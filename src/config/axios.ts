@@ -12,3 +12,15 @@ export const axiosInstanceRegister = axios.create({
 export const axiosInstanceCategory = axios.create({
   baseURL: Environment.backend.categoryMS,
 });
+
+export const axiosInstanceService = axios.create({
+  baseURL: Environment.backend.serviceMS,
+});
+
+export const axiosInstanceEventType = axios.create({
+  baseURL: Environment.backend.eventTypeMS,
+});
+
+export const axiosInstanceQuote = axios.create({
+  baseURL: Environment.backend.quoteMS,
+});
