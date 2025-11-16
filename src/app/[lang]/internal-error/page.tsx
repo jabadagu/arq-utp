@@ -17,7 +17,7 @@ export default function Page() {
 
         <ul className='breadcrumb'>
           <li>
-            <NextLink href='/apps/to-do-list'>
+            <NextLink href='/apps/categories'>
               <i className='material-symbols-outlined'>home</i>
               Panel de Control
             </NextLink>
@@ -62,7 +62,7 @@ export default function Page() {
           </Typography>
 
           <Link
-            href={`/${lang}/apps/to-do-list`}
+            href={`/${lang}/apps/categories`}
             sx={{
               bgcolor: "primary.main",
               textTransform: "capitalize",

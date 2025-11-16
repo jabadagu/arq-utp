@@ -123,7 +123,7 @@ const ConfirmEmailForm: React.FC = () => {
                     </Typography>
                   </Box>
 
-                  <Link href={`/${lang}/apps/to-do-list/`}>
+                  <Link href={`/${lang}/apps/categories/`}>
                     <Button
                       type='submit'
                       variant='contained'

@@ -20,6 +20,24 @@
     },
     {
       "type": "link",
+      "title": "Servicios",
+      "icon": "format_list_bulleted",
+      "href": "/apps/services/"
+    },
+    {
+      "type": "link",
+      "title": "Tipos de Eventos",
+      "icon": "format_list_bulleted",
+      "href": "/apps/events-type/"
+    },
+    {
+      "type": "link",
+      "title": "Cotizaciones",
+      "icon": "description",
+      "href": "/apps/cotizacion/"
+    },
+    {
+      "type": "link",
       "title": "Calendario",
       "icon": "date_range",
       "href": "/apps/calendar/"
@@ -78,6 +96,21 @@
             "title": "Categorías",
             "href": "/apps/categories/",
             "icon": "format_list_bulleted"
+          },
+          {
+            "title": "Servicios",
+            "href": "/apps/services/",
+            "icon": "format_list_bulleted"
+          },
+          {
+            "title": "Tipos de Eventos",
+            "href": "/apps/events-type/",
+            "icon": "format_list_bulleted"
+          },
+          {
+            "title": "Cotizaciones",
+            "href": "/apps/cotizacion/",
+            "icon": "description"
           },
           {
             "title": "Calendario",

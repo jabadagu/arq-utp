@@ -11,7 +11,7 @@ export default function Page() {
 
         <ul className='breadcrumb'>
           <li>
-            <NextLink href='/apps/to-do-list'>
+            <NextLink href='/apps/categories'>
               <i className='material-symbols-outlined'>home</i>
               Panel de Control
             </NextLink>
