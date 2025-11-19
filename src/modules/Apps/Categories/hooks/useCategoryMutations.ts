@@ -11,9 +11,10 @@ export type CreateCategoryPayload = Omit<
   Partial<ICategoryService>,
   "userId"
 > & {
-  name: string;
-  description: string;
-  userId: string | number;
+  nombre: string;
+  descripcion: string;
+  userId: string;
+  status: boolean;
 };
 
 export type UpdateCategoryPayload = Omit<
@@ -21,9 +22,9 @@ export type UpdateCategoryPayload = Omit<
   "id" | "userId"
 > & {
   id: string | number;
-  name: string;
-  description: string;
-  userId: string | number;
+  nombre: string;
+  descripcion: string;
+  userId: string;
 };
 
 export const useCategoryMutations = (

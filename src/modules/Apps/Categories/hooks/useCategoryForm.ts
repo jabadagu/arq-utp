@@ -11,11 +11,13 @@ import {
   UpdateCategoryPayload,
 } from "./useCategoryMutations";
 import { VALIDATION_MESSAGES, ModalMode } from "../content/category.content";
+import { getUserIdFromToken } from "@/shared/utils/jwt-decode";
 
 const schema = z.object({
-  name: z.string().min(1, VALIDATION_MESSAGES.nameRequired),
-  description: z.string().min(1, VALIDATION_MESSAGES.descriptionRequired),
-  userId: z.number().positive(VALIDATION_MESSAGES.userRequired),
+  nombre: z.string().min(1, VALIDATION_MESSAGES.nameRequired),
+  descripcion: z.string().min(1, VALIDATION_MESSAGES.descriptionRequired),
+  userId: z.string().optional(),
+  status: z.boolean().optional(),
 });
 
 type FormValues = z.infer<typeof schema>;
@@ -26,7 +28,8 @@ interface UseCategoryFormParams {
     id?: string | number;
     name?: string;
     description?: string;
-    userId?: number;
+    userId?: string;
+    status?: boolean;
   };
   open: boolean;
   onClose?: () => void;
@@ -43,20 +46,22 @@ export const useCategoryForm = ({
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: {
-      name: initialData?.name ?? "",
-      description: initialData?.description ?? "",
-      userId: initialData?.userId ?? ("" as unknown as number),
+      nombre: initialData?.name ?? "",
+      descripcion: initialData?.description ?? "",
+      userId: initialData?.userId ?? "",
+      status: initialData?.status ?? true,
     },
   });
 
-  const { register, handleSubmit, reset, formState } = form;
+  const { register, handleSubmit, reset, formState, watch } = form;
 
   useEffect(() => {
     if (open) {
       reset({
-        name: initialData?.name ?? "",
-        description: initialData?.description ?? "",
-        userId: initialData?.userId ?? ("" as unknown as number),
+        nombre: initialData?.name ?? "",
+        descripcion: initialData?.description ?? "",
+        userId: initialData?.userId ?? "",
+        status: initialData?.status ?? true,
       });
     }
   }, [open, initialData, reset]);
@@ -66,6 +71,17 @@ export const useCategoryForm = ({
     categoryId,
     mode !== ModalMode.CREATE
   );
+
+  useEffect(() => {
+    if (detail && mode !== ModalMode.CREATE) {
+      reset({
+        nombre: detail.nombre,
+        descripcion: detail.descripcion,
+        userId: detail.userId,
+        status: detail.status,
+      });
+    }
+  }, [detail]);
 
   const { createMutation, updateMutation, deleteMutation } =
     useCategoryMutations(onCreated, onClose);
@@ -80,11 +96,18 @@ export const useCategoryForm = ({
 
     try {
       if (mode === ModalMode.CREATE) {
-        await createMutation.mutateAsync(values as CreateCategoryPayload);
+        const payload: CreateCategoryPayload = {
+          ...values,
+          status: values.status ?? true,
+          userId: getUserIdFromToken(),
+        };
+        await createMutation.mutateAsync(payload);
       } else if (mode === ModalMode.EDIT) {
         const payload: UpdateCategoryPayload = {
           id: initialData?.id as string | number,
           ...values,
+          status: values.status ?? true,
+          userId: getUserIdFromToken(),
         };
         await updateMutation.mutateAsync(payload);
       }
@@ -103,6 +126,7 @@ export const useCategoryForm = ({
     updateMutation,
     deleteMutation,
     onSubmit,
+    watch,
   } as const;
 };
 

@@ -11,7 +11,7 @@ export const useCategoryDetail = (id?: string | number, enabled = true) => {
       if (!id) return null;
       try {
         const res = await axiosInstanceCategory.get(
-          `/categories/listbyid/${id}`
+          `/categorias-servicio/listbyid/${id}`
         );
         const data = Array.isArray(res.data) ? res.data[0] : res.data;
         return data ?? null;
