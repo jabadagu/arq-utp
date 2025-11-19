@@ -22,7 +22,6 @@ export const FIELDS = {
   description: "Descripción",
   user: "Usuario",
   userSelectLabel: "Usuario",
-  status: "Estado",
 };
 
 export const CONFIRMS = {

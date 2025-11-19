@@ -5,5 +5,4 @@ export interface ICategoryService {
   createdAt: string;
   active: boolean;
   userId: string;
-  status: boolean;
 }

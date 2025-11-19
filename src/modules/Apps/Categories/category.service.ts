@@ -3,12 +3,12 @@ import { ICategoryService } from "@/modules/Apps/Categories/interfaces/categorie
 
 export type CreateCategoryDTO = Pick<
   ICategoryService,
-  "nombre" | "descripcion" | "userId" | "status"
+  "nombre" | "descripcion" | "userId"
 >;
 
 export type UpdateCategoryDTO = Pick<
   ICategoryService,
-  "nombre" | "descripcion" | "userId" | "status"
+  "nombre" | "descripcion" | "userId"
 >;
 
 export class CategoryService {
