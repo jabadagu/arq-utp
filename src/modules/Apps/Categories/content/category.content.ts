@@ -22,6 +22,7 @@ export const FIELDS = {
   description: "Descripción",
   user: "Usuario",
   userSelectLabel: "Usuario",
+  status: "Estado",
 };
 
 export const CONFIRMS = {
@@ -47,8 +48,8 @@ export const SEARCH_TEXTS = {
 
 export const TABLE_HEADERS = [
   { id: "id", label: "ID" },
-  { id: "name", label: "Nombre" },
-  { id: "description", label: "Descripción" },
+  { id: "nombre", label: "Nombre" },
+  { id: "descripcion", label: "Descripción" },
   { id: "createdAt", label: "Fecha" },
   { id: "userId", label: "Usuario" },
   { id: "actions", label: "Acciones" },

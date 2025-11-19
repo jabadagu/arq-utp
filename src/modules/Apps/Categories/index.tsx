@@ -95,13 +95,13 @@ const Categories: React.FC = () => {
     if (!debouncedSearch) return list;
     const q = debouncedSearch.toLowerCase();
     return list.filter((row: any) => {
-      const name = String(row.name ?? "").toLowerCase();
-      const description = String(row.description ?? "").toLowerCase();
+      const nombre = String(row.nombre ?? "").toLowerCase();
+      const descripcion = String(row.descripcion ?? "").toLowerCase();
       const id = String(row.id ?? row._id ?? "").toLowerCase();
       const userId = String(row.userId ?? "").toLowerCase();
       return (
-        name.includes(q) ||
-        description.includes(q) ||
+        nombre.includes(q) ||
+        descripcion.includes(q) ||
         id.includes(q) ||
         userId.includes(q)
       );

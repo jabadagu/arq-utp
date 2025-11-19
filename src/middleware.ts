@@ -3,8 +3,9 @@ import { i18n } from "./i18n-config";
 import { jwtDecode } from "jwt-decode";
 import { match as matchLocale } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
+import { decodeJwtPayload } from "./shared/utils/jwt-decode";
 
-function getLocale(request) {
+function getLocale(request: Request): string | undefined {
   const negotiatorHeaders = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
@@ -47,13 +48,6 @@ export function middleware(request) {
       const token = match ? match[1] : null;
 
       // use jwt-decode library to parse payload
-      const decodeJwtPayload = (t) => {
-        try {
-          return jwtDecode(t);
-        } catch (e) {
-          return null;
-        }
-      };
 
       if (!token) {
         // no token -> redirect to localized sign-in

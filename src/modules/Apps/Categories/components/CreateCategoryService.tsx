@@ -1,6 +1,13 @@
 "use client";
 
-import { Box, Typography, TextField, Button } from "@mui/material";
+import {
+  Box,
+  Typography,
+  TextField,
+  Button,
+  FormControlLabel,
+  Checkbox,
+} from "@mui/material";
 import ModalForm from "@/shared/components/ModalForm";
 import useCategoryForm from "../hooks/useCategoryForm";
 import { TEXTS, FIELDS, ModalMode } from "../content/category.content";
@@ -12,9 +19,10 @@ interface Props {
   mode?: ModalMode;
   initialData?: {
     id?: string | number;
-    name?: string;
-    description?: string;
-    userId?: number;
+    nombre?: string;
+    descripcion?: string;
+    userId?: string;
+    status?: boolean;
   };
 }
 
@@ -33,8 +41,8 @@ const CreateCategoryService: React.FC<Props> = ({
     detailLoading,
     createMutation,
     updateMutation,
-    deleteMutation,
     onSubmit,
+    watch,
   } = useCategoryForm({ mode, initialData, open, onClose, onCreated });
 
   const body = (
@@ -47,12 +55,12 @@ const CreateCategoryService: React.FC<Props> = ({
           {FIELDS.name}
         </Typography>
         <TextField
-          {...register("name")}
+          {...register("nombre")}
           disabled={isView}
           fullWidth
           InputProps={{ style: { borderRadius: 8 } }}
-          error={!!formState.errors.name}
-          helperText={formState.errors.name?.message}
+          error={!!formState.errors.nombre}
+          helperText={formState.errors.nombre?.message}
         />
       </Box>
 
@@ -64,12 +72,12 @@ const CreateCategoryService: React.FC<Props> = ({
           {FIELDS.description}
         </Typography>
         <TextField
-          {...register("description")}
+          {...register("descripcion")}
           disabled={isView}
           fullWidth
           InputProps={{ style: { borderRadius: 8 } }}
-          error={!!formState.errors.description}
-          helperText={formState.errors.description?.message}
+          error={!!formState.errors.descripcion}
+          helperText={formState.errors.descripcion?.message}
         />
       </Box>
 
@@ -80,14 +88,11 @@ const CreateCategoryService: React.FC<Props> = ({
           className='text-black'>
           {FIELDS.user}
         </Typography>
-        <TextField
-          {...register("userId", { valueAsNumber: true })}
-          type='number'
-          disabled={isView}
-          fullWidth
-          InputProps={{ style: { borderRadius: 8 } }}
-          error={!!formState.errors.userId}
-          helperText={formState.errors.userId?.message}
+
+        <FormControlLabel
+          control={<Checkbox {...register("status")} disabled={isView} />}
+          checked={watch("status")}
+          label={FIELDS.status}
         />
       </Box>
     </>

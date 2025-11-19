@@ -145,7 +145,7 @@ const CreateServiceForm: React.FC<Props> = ({
                   </MenuItem>
                   {categories.map((category) => (
                     <MenuItem key={category.id} value={category.id}>
-                      {category.name}
+                      {category.nombre}
                     </MenuItem>
                   ))}
                 </Select>
@@ -178,13 +178,37 @@ const CreateServiceForm: React.FC<Props> = ({
       </Box>
 
       <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
-        <FormControlLabel
-          control={<Checkbox {...register("disponible")} disabled={isView} />}
-          label={FIELDS.disponible}
+        <Controller
+          name='disponible'
+          control={control}
+          render={({ field }) => (
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={field.value || false}
+                  onChange={(e) => field.onChange(e.target.checked)}
+                  disabled={isView}
+                />
+              }
+              label={FIELDS.disponible}
+            />
+          )}
         />
-        <FormControlLabel
-          control={<Checkbox {...register("status")} disabled={isView} />}
-          label={FIELDS.status}
+        <Controller
+          name='status'
+          control={control}
+          render={({ field }) => (
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={field.value || false}
+                  onChange={(e) => field.onChange(e.target.checked)}
+                  disabled={isView}
+                />
+              }
+              label={FIELDS.status}
+            />
+          )}
         />
       </Box>
     </Box>
