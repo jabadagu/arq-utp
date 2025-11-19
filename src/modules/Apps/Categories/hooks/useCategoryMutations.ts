@@ -14,7 +14,6 @@ export type CreateCategoryPayload = Omit<
   nombre: string;
   descripcion: string;
   userId: string;
-  status: boolean;
 };
 
 export type UpdateCategoryPayload = Omit<
@@ -63,6 +62,7 @@ export const useCategoryMutations = (
       const { id, ...body } = payload;
       const bodyWithStringUser = {
         ...body,
+        status: 1,
         userId: String((body as any).userId),
       };
       return await categoryService.update(id, bodyWithStringUser as any);
@@ -71,6 +71,7 @@ export const useCategoryMutations = (
       queryClient.invalidateQueries({ queryKey: QUERY_KEYS.CATEGORIES });
       if (onCreated) onCreated(data);
       if (onClose) onClose();
+      toast.success(TOAST_MESSAGES.updateSuccess);
       // intentionally no success toast for update (per request), keep error toast
     },
     onError: () => {

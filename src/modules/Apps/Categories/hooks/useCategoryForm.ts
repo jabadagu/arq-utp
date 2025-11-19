@@ -17,7 +17,6 @@ const schema = z.object({
   nombre: z.string().min(1, VALIDATION_MESSAGES.nameRequired),
   descripcion: z.string().min(1, VALIDATION_MESSAGES.descriptionRequired),
   userId: z.string().optional(),
-  status: z.boolean().optional(),
 });
 
 type FormValues = z.infer<typeof schema>;
@@ -49,7 +48,6 @@ export const useCategoryForm = ({
       nombre: initialData?.name ?? "",
       descripcion: initialData?.description ?? "",
       userId: initialData?.userId ?? "",
-      status: initialData?.status ?? true,
     },
   });
 
@@ -61,7 +59,6 @@ export const useCategoryForm = ({
         nombre: initialData?.name ?? "",
         descripcion: initialData?.description ?? "",
         userId: initialData?.userId ?? "",
-        status: initialData?.status ?? true,
       });
     }
   }, [open, initialData, reset]);
@@ -78,7 +75,6 @@ export const useCategoryForm = ({
         nombre: detail.nombre,
         descripcion: detail.descripcion,
         userId: detail.userId,
-        status: detail.status,
       });
     }
   }, [detail]);
@@ -98,7 +94,6 @@ export const useCategoryForm = ({
       if (mode === ModalMode.CREATE) {
         const payload: CreateCategoryPayload = {
           ...values,
-          status: values.status ?? true,
           userId: getUserIdFromToken(),
         };
         await createMutation.mutateAsync(payload);
@@ -106,7 +101,6 @@ export const useCategoryForm = ({
         const payload: UpdateCategoryPayload = {
           id: initialData?.id as string | number,
           ...values,
-          status: values.status ?? true,
           userId: getUserIdFromToken(),
         };
         await updateMutation.mutateAsync(payload);
