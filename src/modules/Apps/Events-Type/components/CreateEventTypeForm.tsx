@@ -30,7 +30,6 @@ const CreateEventTypeForm: React.FC<Props> = ({
     handleSubmit,
     formState,
     isView,
-    detailLoading,
     createMutation,
     updateMutation,
     onSubmit,
@@ -79,23 +78,6 @@ const CreateEventTypeForm: React.FC<Props> = ({
           helperText={formState.errors.descripcion?.message}
         />
       </Box>
-
-      <Box>
-        <Typography
-          component='h5'
-          sx={{ fontWeight: 500, fontSize: "14px", mb: "12px" }}
-          className='text-black'>
-          {FIELDS.userId}
-        </Typography>
-        <TextField
-          {...register("userId")}
-          disabled={isView}
-          fullWidth
-          InputProps={{ style: { borderRadius: 8 } }}
-          error={!!formState.errors.userId}
-          helperText={formState.errors.userId?.message}
-        />
-      </Box>
     </Box>
   );
 
@@ -129,8 +111,7 @@ const CreateEventTypeForm: React.FC<Props> = ({
         }}
         disabled={
           createMutation.status === "pending" ||
-          updateMutation.status === "pending" ||
-          detailLoading
+          updateMutation.status === "pending"
         }>
         {mode === ModalMode.EDIT ? TEXTS.buttons.save : TEXTS.buttons.create}
       </Button>

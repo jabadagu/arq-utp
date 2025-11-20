@@ -11,6 +11,7 @@ import {
   UpdateServicePayload,
 } from "./useServiceMutations";
 import { VALIDATION_MESSAGES, ModalMode } from "../content/service.content";
+import { getUserIdFromToken } from "@/shared/utils/jwt-decode";
 
 const schema = z.object({
   nombre: z.string().min(1, VALIDATION_MESSAGES.nombreRequired),
@@ -44,44 +45,48 @@ interface UseServiceFormParams {
 export const useServiceForm = ({
   mode = ModalMode.CREATE,
   initialData,
-  open,
   onClose,
   onCreated,
 }: UseServiceFormParams) => {
-  const form = useForm<FormValues>({
-    resolver: zodResolver(schema),
-    defaultValues: {
-      nombre: initialData?.nombre ?? "",
-      descripcion: initialData?.descripcion ?? "",
-      precioBase: initialData?.precioBase ?? 0,
-      categoriaId: initialData?.categoriaId ?? "",
-      userId: initialData?.userId ?? "",
-      disponible: initialData?.disponible ?? true,
-      status: initialData?.status ?? true,
-    },
-  });
-
-  const { register, handleSubmit, reset, formState, control } = form;
-
-  useEffect(() => {
-    if (open) {
-      reset({
-        nombre: initialData?.nombre ?? "",
-        descripcion: initialData?.descripcion ?? "",
-        precioBase: initialData?.precioBase ?? 0,
-        categoriaId: initialData?.categoriaId ?? "",
-        userId: initialData?.userId ?? "",
-        disponible: initialData?.disponible ?? true,
-        status: initialData?.status ?? true,
-      });
-    }
-  }, [open, initialData, reset]);
-
   const serviceId = initialData?.id;
   const { data: detail, isLoading: detailLoading } = useServiceDetail(
     serviceId,
     mode !== ModalMode.CREATE
   );
+
+  const currentData = detail || initialData;
+
+  const form = useForm<FormValues>({
+    resolver: zodResolver(schema),
+    mode: "all",
+    defaultValues: {
+      nombre: currentData?.nombre ?? "",
+      descripcion: currentData?.descripcion ?? "",
+      precioBase: currentData?.precioBase ?? 0,
+      categoriaId: currentData?.categoriaId ?? "",
+      userId: currentData?.userId ?? "",
+      disponible: currentData?.disponible ?? true,
+      status: currentData?.status ?? true,
+    },
+  });
+
+  const { register, handleSubmit, reset, formState, control, watch } = form;
+
+  useEffect(() => {
+    if (currentData && (mode === ModalMode.EDIT || mode === ModalMode.VIEW)) {
+      const formData = {
+        nombre: currentData.nombre ?? "",
+        descripcion: currentData.descripcion ?? "",
+        precioBase: currentData.precioBase ?? 0,
+        categoriaId: currentData.categoriaId ?? "",
+        userId: currentData.userId ?? "",
+        disponible: currentData.disponible ?? true,
+        status: currentData.status ?? true,
+      };
+
+      reset(formData);
+    }
+  }, [currentData, mode, reset]);
 
   const { createMutation, updateMutation, deleteMutation } =
     useServiceMutations(onCreated, onClose);
@@ -94,18 +99,17 @@ export const useServiceForm = ({
       return;
     }
 
-    try {
-      if (mode === ModalMode.CREATE) {
-        await createMutation.mutateAsync(values as CreateServicePayload);
-      } else if (mode === ModalMode.EDIT) {
-        const payload: UpdateServicePayload = {
-          id: initialData?.id as string,
-          ...values,
-        };
-        await updateMutation.mutateAsync(payload);
-      }
-    } catch (err) {
-      console.error("mutation error", err);
+    const userId = getUserIdFromToken();
+    const submitValues = { ...values, userId };
+
+    if (mode === ModalMode.CREATE) {
+      await createMutation.mutateAsync(submitValues as CreateServicePayload);
+    } else if (mode === ModalMode.EDIT) {
+      const payload: UpdateServicePayload = {
+        id: initialData?.id as string,
+        ...submitValues,
+      };
+      await updateMutation.mutateAsync(payload);
     }
   };
 

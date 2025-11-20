@@ -15,8 +15,15 @@ import {
 import { Controller } from "react-hook-form";
 import ModalForm from "@/shared/components/ModalForm";
 import useServiceForm from "../hooks/useServiceForm";
-import { TEXTS, FIELDS, ModalMode } from "../content/service.content";
+import {
+  TEXTS,
+  FIELDS,
+  ModalMode,
+  QUERY_KEYS,
+} from "../content/service.content";
 import { useFetchCategories } from "@/modules/Apps/Categories/hooks/useCatoryService";
+import { useEffect } from "react";
+import { useQueryClient } from "@tanstack/react-query";
 
 interface Props {
   open: boolean;
@@ -42,6 +49,15 @@ const CreateServiceForm: React.FC<Props> = ({
   mode = ModalMode.CREATE,
   initialData,
 }) => {
+  const queryClient = useQueryClient();
+  useEffect(() => {
+    if (open) {
+      queryClient.removeQueries({
+        queryKey: QUERY_KEYS.SERVICE(initialData?.id),
+      });
+    }
+  }, [open, queryClient]);
+
   const {
     register,
     handleSubmit,
@@ -55,6 +71,9 @@ const CreateServiceForm: React.FC<Props> = ({
   } = useServiceForm({ mode, initialData, open, onClose, onCreated });
 
   const { data: categories, loading: categoriesLoading } = useFetchCategories();
+
+  const formKey =
+    mode === ModalMode.CREATE ? "create" : `${mode}-${initialData?.id}`;
 
   const body = (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -133,82 +152,61 @@ const CreateServiceForm: React.FC<Props> = ({
           <Controller
             name='categoriaId'
             control={control}
-            render={({ field }) => (
-              <FormControl fullWidth error={!!formState.errors.categoriaId}>
-                <Select
-                  {...field}
-                  disabled={isView || categoriesLoading}
-                  displayEmpty
-                  sx={{ borderRadius: 1 }}>
-                  <MenuItem value='' disabled>
-                    Seleccionar categoría
-                  </MenuItem>
-                  {categories.map((category) => (
-                    <MenuItem key={category.id} value={category.id}>
-                      {category.nombre}
+            render={({ field }) => {
+              console.log("Select field value:", field.value);
+              console.log("Available categories:", categories);
+              return (
+                <FormControl fullWidth error={!!formState.errors.categoriaId}>
+                  <Select
+                    {...field}
+                    value={field.value || ""}
+                    disabled={isView || categoriesLoading}
+                    displayEmpty
+                    sx={{ borderRadius: 1 }}>
+                    <MenuItem value='' disabled>
+                      Seleccionar categoría
                     </MenuItem>
-                  ))}
-                </Select>
-                {formState.errors.categoriaId && (
-                  <FormHelperText>
-                    {formState.errors.categoriaId.message}
-                  </FormHelperText>
-                )}
-              </FormControl>
-            )}
+                    {categories.map((category) => (
+                      <MenuItem key={category.id} value={category.id}>
+                        {category.nombre}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                  {formState.errors.categoriaId && (
+                    <FormHelperText>
+                      {formState.errors.categoriaId.message}
+                    </FormHelperText>
+                  )}
+                </FormControl>
+              );
+            }}
           />
         </Box>
-      </Box>
-
-      <Box>
-        <Typography
-          component='h5'
-          sx={{ fontWeight: 500, fontSize: "14px", mb: "12px" }}
-          className='text-black'>
-          {FIELDS.userId}
-        </Typography>
-        <TextField
-          {...register("userId")}
-          disabled={isView}
-          fullWidth
-          InputProps={{ style: { borderRadius: 8 } }}
-          error={!!formState.errors.userId}
-          helperText={formState.errors.userId?.message}
-        />
       </Box>
 
       <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
         <Controller
           name='disponible'
           control={control}
-          render={({ field }) => (
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={field.value || false}
-                  onChange={(e) => field.onChange(e.target.checked)}
-                  disabled={isView}
-                />
-              }
-              label={FIELDS.disponible}
-            />
-          )}
-        />
-        <Controller
-          name='status'
-          control={control}
-          render={({ field }) => (
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={field.value || false}
-                  onChange={(e) => field.onChange(e.target.checked)}
-                  disabled={isView}
-                />
-              }
-              label={FIELDS.status}
-            />
-          )}
+          render={({ field }) => {
+            console.log(
+              "Checkbox field value:",
+              field.value,
+              typeof field.value
+            );
+            return (
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    checked={Boolean(field.value)}
+                    onChange={(e) => field.onChange(e.target.checked)}
+                    disabled={isView}
+                  />
+                }
+                label={FIELDS.disponible}
+              />
+            );
+          }}
         />
       </Box>
     </Box>
@@ -254,6 +252,7 @@ const CreateServiceForm: React.FC<Props> = ({
 
   return (
     <ModalForm
+      key={formKey}
       open={open}
       onClose={onClose}
       onSubmit={handleSubmit(onSubmit)}

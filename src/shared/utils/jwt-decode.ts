@@ -22,5 +22,6 @@ export const decodeJwtPayload = (t: string) => {
 export const getUserIdFromToken = (): string => {
   const token = cookies.get("token") || "";
   const userId = decodeJwtPayload(token)?.uid ?? "";
+
   return userId || "";
 };

@@ -58,7 +58,6 @@ export const TABLE_HEADERS = [
   { id: "precioBase", label: "Precio Base" },
   { id: "categoriaId", label: "Categoría" },
   { id: "disponible", label: "Disponible" },
-  { id: "status", label: "Estado" },
   { id: "createdAt", label: "Fecha de Creación" },
   { id: "actions", label: "Acciones" },
 ];

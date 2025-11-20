@@ -42,42 +42,68 @@ export const useCategoryForm = ({
   onClose,
   onCreated,
 }: UseCategoryFormParams) => {
-  const form = useForm<FormValues>({
-    resolver: zodResolver(schema),
-    defaultValues: {
-      nombre: initialData?.name ?? "",
-      descripcion: initialData?.description ?? "",
-      userId: initialData?.userId ?? "",
-    },
-  });
-
-  const { register, handleSubmit, reset, formState, watch } = form;
-
-  useEffect(() => {
-    if (open) {
-      reset({
-        nombre: initialData?.name ?? "",
-        descripcion: initialData?.description ?? "",
-        userId: initialData?.userId ?? "",
-      });
-    }
-  }, [open, initialData, reset]);
-
   const categoryId = initialData?.id;
   const { data: detail, isLoading: detailLoading } = useCategoryDetail(
     categoryId,
     mode !== ModalMode.CREATE
   );
 
+  // Debug: mostrar qué datos tenemos
+  console.log("Category Detail Debug:", {
+    categoryId,
+    detail,
+    detailLoading,
+    initialData,
+    mode,
+  });
+
+  // Log detallado de la estructura de datos
+  if (detail) {
+    console.log("Category Detail keys:", Object.keys(detail));
+    console.log("Category Detail structure:", JSON.stringify(detail, null, 2));
+  }
+  if (initialData) {
+    console.log("Category InitialData keys:", Object.keys(initialData));
+    console.log(
+      "Category InitialData structure:",
+      JSON.stringify(initialData, null, 2)
+    );
+  }
+
+  // Usar detail si está disponible, sino usar initialData
+  const currentData = detail || initialData;
+  console.log("Current category data being used:", currentData);
+
+  const form = useForm<FormValues>({
+    resolver: zodResolver(schema),
+    mode: "onChange",
+    defaultValues: {
+      nombre: currentData?.nombre || currentData?.name || "",
+      descripcion: currentData?.descripcion || currentData?.description || "",
+      userId: currentData?.userId || "",
+    },
+  });
+
+  const { register, handleSubmit, reset, formState, watch } = form;
+
+  // Watch the values to debug
+  const watchedValues = watch();
+
   useEffect(() => {
-    if (detail && mode !== ModalMode.CREATE) {
-      reset({
-        nombre: detail.nombre,
-        descripcion: detail.descripcion,
-        userId: detail.userId,
-      });
+    if (currentData && (mode === ModalMode.EDIT || mode === ModalMode.VIEW)) {
+      console.log("Resetting category form with data:", currentData);
+      console.log("Current watched values:", watchedValues);
+
+      const formData = {
+        nombre: currentData.nombre || currentData.name || "",
+        descripcion: currentData.descripcion || currentData.description || "",
+        userId: currentData.userId || "",
+      };
+
+      console.log("Setting category form data:", formData);
+      reset(formData);
     }
-  }, [detail]);
+  }, [currentData, mode, reset]);
 
   const { createMutation, updateMutation, deleteMutation } =
     useCategoryMutations(onCreated, onClose);
@@ -120,7 +146,7 @@ export const useCategoryForm = ({
     updateMutation,
     deleteMutation,
     onSubmit,
-    watch,
+    watchedValues,
   } as const;
 };
 

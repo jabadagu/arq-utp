@@ -4,18 +4,18 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useEventTypeDetail } from "./useEventTypeDetail";
 import {
   useEventTypeMutations,
   CreateEventTypePayload,
   UpdateEventTypePayload,
 } from "./useEventTypeMutations";
 import { VALIDATION_MESSAGES, ModalMode } from "../content/eventType.content";
+import { getUserIdFromToken } from "@/shared/utils/jwt-decode";
 
 const schema = z.object({
   nombre: z.string().min(1, VALIDATION_MESSAGES.nombreRequired),
   descripcion: z.string().min(1, VALIDATION_MESSAGES.descripcionRequired),
-  userId: z.string().min(1, VALIDATION_MESSAGES.userIdRequired),
+  userId: z.string().optional(),
 });
 
 type FormValues = z.infer<typeof schema>;
@@ -61,12 +61,6 @@ export const useEventTypeForm = ({
     }
   }, [open, initialData, reset]);
 
-  const eventTypeId = initialData?.id;
-  const { data: detail, isLoading: detailLoading } = useEventTypeDetail(
-    eventTypeId,
-    mode !== ModalMode.CREATE
-  );
-
   const { createMutation, updateMutation, deleteMutation } =
     useEventTypeMutations(onCreated, onClose);
 
@@ -78,18 +72,17 @@ export const useEventTypeForm = ({
       return;
     }
 
-    try {
-      if (mode === ModalMode.CREATE) {
-        await createMutation.mutateAsync(values as CreateEventTypePayload);
-      } else if (mode === ModalMode.EDIT) {
-        const payload: UpdateEventTypePayload = {
-          id: initialData?.id as string,
-          ...values,
-        };
-        await updateMutation.mutateAsync(payload);
-      }
-    } catch (err) {
-      console.error("mutation error", err);
+    const userId = getUserIdFromToken();
+    const submitValues = { ...values, userId };
+
+    if (mode === ModalMode.CREATE) {
+      await createMutation.mutateAsync(submitValues as CreateEventTypePayload);
+    } else if (mode === ModalMode.EDIT) {
+      const payload: UpdateEventTypePayload = {
+        id: initialData?.id as string,
+        ...submitValues,
+      };
+      await updateMutation.mutateAsync(payload);
     }
   };
 
@@ -98,7 +91,6 @@ export const useEventTypeForm = ({
     handleSubmit,
     formState,
     isView,
-    detailLoading,
     createMutation,
     updateMutation,
     deleteMutation,

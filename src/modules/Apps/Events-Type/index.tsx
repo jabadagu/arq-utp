@@ -29,8 +29,6 @@ const EventsType: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [debouncedSearch, setDebouncedSearch] = useState<string>("");
 
-  // pagination now internal to DataTable
-
   // Modal
   const [open, setOpen] = useState(false);
   const [modalMode, setModalMode] = useState<ModalMode>(ModalMode.CREATE);

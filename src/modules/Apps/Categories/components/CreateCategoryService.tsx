@@ -10,14 +10,7 @@ import {
 } from "@mui/material";
 import ModalForm from "@/shared/components/ModalForm";
 import useCategoryForm from "../hooks/useCategoryForm";
-import {
-  TEXTS,
-  FIELDS,
-  ModalMode,
-  QUERY_KEYS,
-} from "../content/category.content";
-import { useQueryClient } from "@tanstack/react-query";
-import { useEffect } from "react";
+import { TEXTS, FIELDS, ModalMode } from "../content/category.content";
 
 interface Props {
   open: boolean;
@@ -39,8 +32,6 @@ const CreateCategoryService: React.FC<Props> = ({
   mode = ModalMode.CREATE,
   initialData,
 }) => {
-  const queryClient = useQueryClient();
-
   const {
     register,
     handleSubmit,
@@ -50,15 +41,20 @@ const CreateCategoryService: React.FC<Props> = ({
     createMutation,
     updateMutation,
     onSubmit,
+    watchedValues,
   } = useCategoryForm({ mode, initialData, open, onClose, onCreated });
 
-  useEffect(() => {
-    if (open) {
-      queryClient.removeQueries({
-        queryKey: QUERY_KEYS.CATEGORY(initialData?.id),
-      });
-    }
-  }, [open, queryClient]);
+  // Debug: mostrar los valores actuales del formulario
+  console.log("Category Form watched values:", watchedValues);
+  console.log("Category Initial data:", initialData);
+  console.log("Category Mode:", mode);
+  console.log("Category Detail loading:", detailLoading);
+
+  // No mostrar el modal hasta que los datos estén cargados en modo EDIT/VIEW
+  if ((mode === ModalMode.EDIT || mode === ModalMode.VIEW) && detailLoading) {
+    console.log("Waiting for category data to load...");
+    return null;
+  }
 
   const body = (
     <>
@@ -90,6 +86,8 @@ const CreateCategoryService: React.FC<Props> = ({
           {...register("descripcion")}
           disabled={isView}
           fullWidth
+          multiline
+          rows={3}
           InputProps={{ style: { borderRadius: 8 } }}
           error={!!formState.errors.descripcion}
           helperText={formState.errors.descripcion?.message}
@@ -131,7 +129,7 @@ const CreateCategoryService: React.FC<Props> = ({
           updateMutation.status === "pending" ||
           detailLoading
         }>
-        {mode === "edit" ? TEXTS.buttons.save : TEXTS.buttons.create}
+        {mode === ModalMode.EDIT ? TEXTS.buttons.save : TEXTS.buttons.create}
       </Button>
     </>
   );

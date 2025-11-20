@@ -5,7 +5,7 @@ import { match as matchLocale } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 import { decodeJwtPayload } from "./shared/utils/jwt-decode";
 
-function getLocale(request: Request): string | undefined {
+function getLocale(request) {
   const negotiatorHeaders = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 

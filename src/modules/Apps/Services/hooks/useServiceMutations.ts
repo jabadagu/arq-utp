@@ -46,7 +46,7 @@ export const useServiceMutations = (
       queryClient.invalidateQueries({ queryKey: QUERY_KEYS.SERVICES });
       if (onCreated) onCreated(data);
       if (onClose) onClose();
-      // intentionally no success toast for update (per request), keep error toast
+      toast.success(TOAST_MESSAGES.updateSuccess);
     },
     onError: () => {
       toast.error(TOAST_MESSAGES.updateError);
